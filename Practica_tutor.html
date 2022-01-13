@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Párrafos, títulos, enlaces e imágenes</title>
+    <meta name="description"
+        content="Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quae qui distinctio vero maxime aperiam similique quo animi enim tenetur mollitia quibusdam ipsa, voluptatem doloribus voluptatibus ex repudiandae sit sunt! Neque!">
+
+    <style>
+        main {
+            margin: 5px;
+        }
+
+        section {
+            background: rgb(219, 214, 214);
+            padding: 5px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            ;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Elemntos básicos HTML</h1>
+    <main>
+        <section>
+            <h2>Párrafos</h2>
+            <!-- Elemento de bloque -->
+            <p>Un párrafo</p>
+            <p>Otro párrafo</p>
+
+            <!-- Diferencias con un elemento en línea -->
+
+            <span>Esto es un span</span>
+            <span>Esto es un span</span>
+
+            <!-- Utilidad de la etiqueta SPAN -->
+            <p>Un párrafo con <span style="color: green">texto verde</span> y luego sigue normal</p>
+
+            <!-- Atriburo ALIGN-->
+            <p style="text-align: left;">Texto alineado a la izquierda</p>
+            <p style="text-align: center;">Texto alineado al centro</p>
+            <p style="text-align: right;">Texto alineado a la derecha</p>
+
+            <!-- Deshabilitar menú contextual-->
+            <p oncontextmenu="return false">Este texto no despliega menú con botón derecho</p>
+
+            <!-- Texto con tooltip-->
+            <p title="El tooltip">Texto con tooltip</p>
+
+            <!-- Atributo DIR -->
+            <p dir="ltr">Un texto en un lenguaje occidental</p>
+            <p dir="rtl">Un texto en un lenguaje occidental</p>
+
+            <!--contenido editable -->
+
+            <p contenteditable="true">Este texto se puede editar en el navegador</p>
+        </section>
+
+        <section>
+            <h2>Desplegable</h2>
+            <details>
+                <summary style="cursor: pointer;">Razas de gatos</summary>
+                <ul>
+                    <li>Siamés</li>
+                    <li>Persa</li>
+                    <li>Ruso</li>
+                </ul>
+            </details>
+        </section>
+
+        <section>
+            <!-- En negrita. Diferencias entre B y STRONG-->
+
+            <p>Un párrafo con letra en <b>Negrita</b></p>
+            <p>Un párrafo con letra en <strong>Negrita</strong></p>
+
+            <!-- En cursiva podemos usar I o EM-->
+
+            <p>Un párrafo con letra en <i>Cursiva</i></p>
+            <p>Un párrafo con letra en <em>Cursiva</em></p>
+
+            <p>Un párrafo con letra en <u>Subrayado</u></p>
+            <p>Un párrafo con letra en <ins>Subrayado</ins></p>
+            <p>Un párrafo con letra en <del>Tachado</del></p>
+
+            <p>El H<sub>2</sub>O es agua</p>
+            <p><sup>*</sup> Campo requerido</p>
+
+            <br />
+
+            <h3>Con CSS</h3>
+            <p>Un párrafo con letra en <span style="text-decoration: underline">Subrayado</span></p>
+
+            <p>Un párrafo con letra en <span style="text-decoration: line-through">Tachado</span></p>
+
+        </section>
+        <section>
+            <h2><u>Títulos</u></h2>
+            <h1>Título principal (Solo uno por página web)</h1>
+            <h2>Título secundario</h2>
+        </section>
+
+        <section>
+            <h2>Links</h2>
+            <!-- Elemento en línea-->
+            <!-- Link externo-->
+            <a href="http://www.google.es" target="_blank" rel="noopener noreferrer">Google</a>
+        </section>
+
+        <!-- Link interno-->
+        <a href="#contacto">Google</a>
+
+        <!-- Link local-->
+        <a href="/contacto">Contacto</a>
+
+        <!-- Link de email-->
+        <a href="mailto:info@eip.com">Mail</a>
+
+        <!-- Link de teléfono-->
+        <a href="tel:606111222">Mail</a>
+
+        <!-- Link de SMS-->
+        <a href="sms:606111222&body=Un mensaje de texto...">SMS</a>
+
+        <!-- Link de archivo-->
+        <a href="img/CuencoLleno.png" download="unGato">Mail</a>
+
+        </section>
+
+
+
+
+    </main>
+
+</body>
+
+</html>
