@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias</title>
+    <meta name="description" content="Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem, earum?">
+</head>
+<style>
+    a {
+        text-decoration: none;
+    }
+
+    .main_header {
+        width: 100%;
+        height: 100px;
+        background-image: url(./img/dormitorio.jpg);
+        background-repeat: no-repeat;
+        background-size: 45em;
+        background-position: center;
+        text-align: center;
+        padding: 20px;
+        color: white;
+    }
+
+    h1 {
+        padding-top: 50px;
+    }
+
+    h2 {
+        text-decoration: underline;
+    }
+
+    nav {
+        background: rgb(238, 169, 169);
+        padding: 3px;
+        border: black solid 1px;
+    }
+
+    nav ul {
+        display: flex;
+        color: white;
+    }
+
+    nav ul li {
+        display: inline;
+        width: 25%;
+    }
+
+    nav ul li a {
+        color: rgba(131, 12, 12, 0.808);
+    }
+
+    main {
+        display: flex;
+        background: rgb(238, 169, 169);
+        margin: 2px 0;
+    }
+
+    aside {
+        min-width: 170px;
+        background: rgb(238, 169, 169);
+        border: black solid 1px;
+        margin-right: 16px;
+    }
+
+    aside a {
+        color: rgba(131, 12, 12, 0.808);
+
+    }
+
+    aside ul {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    aside li {
+        list-style-type: none;
+        text-align: center;
+    }
+
+    picture img {
+        width: 200px;
+        display: flex;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+    }
+
+    footer {
+        background: black;
+        color: white;
+        height: 50px;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    article {
+        margin-bottom: 16px;
+    }
+</style>
+
+<body>
+    <header class="main_header">
+        <h1>Noticias de Muebles</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#general">General</a></li>
+            <li><a href="#dormitorio">Dormitorio</a></li>
+            <li><a href="#cocina">Cocina</a></li>
+            <li><a href="#salon">Salón</a></li>
+
+        </ul>
+        <a name="principio"></a>
+    </nav>
+    <main>
+        <aside>
+            <ul>
+                <h2>Materiales</h2>
+                <li><a href="#tipo">Tipo</a></li>
+                <li><a href="#colores">Colores</a></li>
+                <li><a href="#medidas">Medidas</a></li>
+            </ul>
+        </aside>
+        <section class="main_section">
+            <section>
+                <header>
+                    <h2>Noticias</h2>
+                </header>
+                <article>
+                    <a name="general"></a>
+                    <h3>General</h3>
+                    <p>Sección de noticias sobre muebles</p>
+                </article>
+                <article>
+                    <a name="dormitorio"></a>
+                    <h3>Dormitorio</h3>
+                    <picture>
+                        <img src="./img/dormitorio.jpg" alt="Dormitorio">
+                    </picture>
+                    <p>Se ha inventado un dormitorio flotante en el cual puedes dormir en el techo</p>
+                    <cite>Autor: Elton Tito, el más listo o no de la redacción</cite>
+                </article>
+                <article>
+                    <a name="cocina"></a>
+                    <h3>Cocina</h3>
+                    <picture>
+                        <img src="./img/cocina.jpg" alt="Cocina">
+                    </picture>
+                    <p>Tu cocina en tan solo 100 metros cuadrados, al alcance de cualquiera</p>
+                    <cite>Autor: Helen Chufe, con ella podrás conectar todo sin problemas</cite>
+                </article>
+                <article>
+                    <a name="salon"></a>
+                    <h3>Salon</h3>
+                    <picture>
+                        <img src="./img/salon.jpg" alt="Salon">
+                    </picture>
+                    <p>¿Quieres saber como aprovechar tu salón? Aquí tienes la solución</p>
+                    <cite>Autor: Lola Mento</cite>
+                </article>
+            </section>
+            <section>
+                <header>
+                    <h2>Materiales</h2>
+                </header>
+                <article>
+                    <a name="tipo"></a>
+                    <h3>Tipos</h3>
+                    <picture>
+                        <img src="./img/aglomerado.jpg" alt="Aglomerado">
+                    </picture>
+                    <p>Diferentes tipos de materiales: Madera, mdf, aglomerado, etc...</p>
+                    <cite>Andrés Trozado</cite>
+                </article>
+                <article>
+                    <a name="colores"></a>
+                    <h3>Colores</h3>
+                    <picture>
+                        <img src="./img/colores.jpg" alt="Colores">
+                    </picture>
+                    <p>Variedad de colores para todo tipo de muebles</p>
+                    <cite>Autor: Rubén D. Moniado</cite>
+                </article>
+                <article>
+                    <a name="medidas"></a>
+                    <h3>Medidas</h3>
+                    <picture>
+                        <img src="./img/medidas.jpg" alt="Medidas">
+                    </picture>
+                    <p>Tablero entero por si quieres que tu casa sea como Ekia</p>
+                    <cite>Inés Tornudo</cite>
+                </article>
+            </section>
+        </section>
+
+    </main>
+    <footer>
+        <address>
+            <p>Mudecor Vivas S.L. Copyright &copy;</p>
+        </address>
+    </footer>
+
+</body>
+
+</html>
