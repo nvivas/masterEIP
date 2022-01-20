@@ -14,11 +14,12 @@ header div {
 
 a {
   text-decoration: none;
-  color: white;
+  color: whitesmoke;
 }
 
 h2 {
   margin: 4px;
+  text-align: center;
 }
 
 nav {
@@ -41,9 +42,14 @@ body {
   margin: 16px 16px;
 }
 
-section {
+/* section {
   margin: 4px 8px 24px;
+} */
+
+.main-section {
+  padding: 8px;
 }
+
 footer address {
   background: black;
   height: 50px;
