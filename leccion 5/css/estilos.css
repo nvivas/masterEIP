@@ -1,0 +1,42 @@
+section {
+  padding: 15px;
+  border-radius: 10px;
+  background: rgb(238, 238, 238);
+  margin: 10px;
+}
+
+label {
+  font-size: 14px;
+}
+
+input,
+textarea,
+select {
+  display: block;
+  border-radius: 5px;
+  padding: 10px;
+  width: 250px;
+  margin-bottom: 24px;
+}
+
+input:hover {
+  border-color: green;
+}
+
+.radioGenero {
+  width: 250px;
+}
+.radioGenero input {
+  width: 10px;
+  display: inline;
+  margin-bottom: 0;
+}
+
+select {
+  padding: 1px;
+}
+
+.boton {
+  width: 275px;
+  font-weight: bold;
+}
