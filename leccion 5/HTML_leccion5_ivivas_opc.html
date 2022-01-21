@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <meta name="description" content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, molestias.">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+    <main>
+        <section>
+            <h1>Formulario</h1>
+            <form name="formulario" method="post" action="/procesamiento-datos">
+                <!-- Entrada de datos para el nombre -->
+                <label for="type-text">Nombre:</label>
+                <input type="text" name="username" id="type-text" placeholder="Introduce tu nombre" autofocus>
+
+                <!-- Entrada de daots para el apellido -->
+                <label for="apellido" id="apellido">Apellido:</label>
+                <input type="text" name="apellido" id="apellido" placeholder="Introduce tu apellido">
+
+                <!-- Campo de lista de selección-->
+                <label for="ciudad">Elegir ciudad:</label>
+                <select name="ciudad" multiple size=2>
+                    <!-- Opciones de la lista -->
+                    <option value="madrid">Madrid</option>
+                    <option value="malaga">Málaga</option>
+                    <option value="barcelona">Barcelona</option>
+
+                    <!-- Opción por defecto -->
+                    <option value="coruna" selected>La Coruña</option>
+                </select>
+
+                <!-- Botones de opción -->
+                <fieldset class="radioGenero">
+                    <legend>Sexo</legend>
+                    <input type="radio" name="sexo" id="hombre" value="H" />
+                    <label for="hombre">Hombre</label><br />
+                    <input type="radio" id="mujer" name="sexo" value="M" />
+                    <label for="mujer">Mujer</label>
+                </fieldset>
+
+                <!-- Checkbox de política de privacidad -->
+                <p class="radioGenero">
+                    <input type="checkbox" id="privacidad" name="privacidad" value="politica" required>
+                    <label for="privacidad"> Acepto que estoy de acuerdo con el envío de mis datos</label><br>
+                </p>
+
+                <!-- Campo de texto para comentarios -->
+                <label for="comentario">Comentarios:</label>
+                <textarea name="comentario" id="comentarios" cols="30" rows="10"
+                    placeholder="Introduce tu comentario"></textarea>
+
+                <!-- Botón para enviar -->
+                <input class="boton" type="submit" value="Enviar">
+                <input class="boton" type="reset" value="Reset">
+            </form>
+        </section>
+    </main>
+    <footer></footer>
+</body>
+
+</html>
