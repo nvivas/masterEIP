@@ -16,3 +16,7 @@ td {
   color: #333;
   font-size: 18px;
 }
+
+video {
+    width: 100%;
+}
