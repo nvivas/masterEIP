@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <title>Contacto</title>
+    <meta name="description" content="Contacto">
+    <link rel="stylesheet" href="./css/styles_form.css">
+</head>
+
+<body>
+    <div class="form-main">
+        <header>
+            <h1>Formulario de contacto</h1>
+        </header>
+        <main>
+            <form class="formulario" name="formulario" method="post" action="/">
+                <label for="nombre" id="nombre">Nombre*</label>
+                <input type="text" placeholder="Escribe tu nombre" required>
+
+                <label for="email" id="email">Email*</label>
+                <input type="email" placeholder="Escribe tu Email" required>
+
+                <label for="telefono" id="telefono">Teléfono</label>
+                <input type="telefono" placeholder="Escribe tu teléfono">
+
+                <label for="sitio_web" id="sitio_web">Sitio web</label>
+                <input type="url" value="https://" placeholder="Escribe la URL de tu sitio web">
+
+                <label for="asunto" id="asunto">Asunto*</label>
+                <input type="text" placeholder="Escribe un asunto" required>
+
+                <label for="">Mensaje*</label>
+                <textarea name="" id="" cols="30" rows="10" placeholder="Deja aquí tu comentario" required></textarea>
+                <input type="submit">
+                <label for="">* los campos son bligatorios</label>
+            </form>
+        </main>
+    </div>
+</body>
+
+</html>
