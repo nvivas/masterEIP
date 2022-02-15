@@ -1,0 +1,73 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(250, 195, 122);
+  font-family: sans-serif;
+}
+
+.form-main {
+  background: rgb(250, 227, 185);
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.formulario {
+  margin: 32px;
+}
+
+h1 {
+  color: orange;
+  text-align: center;
+  padding-top: 24px;
+}
+
+input,
+textarea {
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px rgb(134, 107, 31);
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  border: none;
+  outline: none;
+  color: rgb(163, 127, 79);
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="text"] {
+  margin-bottom: 16px;
+}
+
+label {
+  color: rgb(189, 156, 95);
+  font-size: 12px;
+}
+
+::placeholder {
+  color: #dadada;
+}
+
+input[type="submit"] {
+  background: rgb(250, 195, 122);
+  color: rgb(134, 112, 69);
+}
+
+input:focus,
+textarea:focus {
+  border: 2px solid rgb(250, 195, 122);
+}
