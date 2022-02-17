@@ -30,6 +30,12 @@ h1 {
   color: orange;
   text-align: center;
   padding-top: 24px;
+  font-size: 30px;
+
+h6 {
+  margin-top: 32px;
+  font-weight: 700;
+  color: rgb(100, 99, 99);
 }
 
 input,
