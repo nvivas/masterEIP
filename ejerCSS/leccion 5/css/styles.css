@@ -24,8 +24,8 @@ header {
 }
 .contenedor {
   width: 700px;
-  height: 800px;
-  margin: 20px;
+  height: 95vh;
+  margin: 20px auto;
   border: 1px solid black;
 }
 
@@ -124,7 +124,7 @@ img {
 
 footer {
   position: fixed;
-  bottom: 0px;
+  bottom: 20px;
   height: 80px;
   width: 700px;
   background: #000;
