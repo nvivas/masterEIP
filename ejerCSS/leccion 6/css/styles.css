@@ -1,0 +1,42 @@
+:root {
+  --body: rgb(88, 35, 88);
+  --main: rgb(228, 111, 228);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--body);
+}
+
+main {
+  background: var(--main);
+  width: 300px;
+  height: 300px;
+  margin: 50px;
+}
+
+h1 {
+  margin-bottom: 32px;
+  font-size: 70px;
+  text-align: center;
+  color: var(--body);
+}
+
+.lists {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section ul li {
+  color: var(--body);
+  list-style-image: url(../img/backToData.png);
+}
