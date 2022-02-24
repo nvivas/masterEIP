@@ -1,0 +1,54 @@
+:root {
+  --fondo: black;
+  --letras: white;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--letras);
+}
+
+.header {
+  /* Color url_imagen repeat position / size  */
+  background: rgb(24, 23, 23) url(../img/juegos-de-mesa.jpg) repeat center /
+    cover;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+nav menu {
+  height: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+  font-size: 1.05rem;
+}
+
+nav menu li a:hover,
+.active {
+  color: white;
+}
+
+.pocimas a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+  font-size: 1.05rem;
+}
