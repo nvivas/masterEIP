@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  color: white;
+}
+
+.portada {
+  /* Color url_imagen repeat position / size  */
+  background: black url(../img/elSenorDeLosAnillos.jpg) no-repeat center /
+    contain;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.personaje {
+  display: flex;
+  justify-content: center;
+  margin: 16px 0;
+}
+
+.imagen {
+  width: 100px;
+  height: 100px;
+}
+
+p {
+  margin: 0 0 16px 16px;
+  width: 400px;
+}
+
+@media screen and (max-width: 320px) {
+  .portada {
+    background: none;
+    display: none;
+  }
+  p {
+    font-size: 8px;
+  }
+}
+@media screen and (min-width: 320px) {
+  .portada {
+    height: 250px;
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 764px) {
+  .portada {
+    height: 400px;
+    font-size: 28px;
+  }
+}
