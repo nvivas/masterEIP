@@ -1,3 +1,8 @@
+:root {
+  --fondo: black;
+  --letra: white;
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -5,18 +10,17 @@
 }
 
 body {
-  background: black;
-  color: white;
+  background: var(--fondo);
+  color: var(--letra);
+  margin: 16px;
 }
 
 .portada {
-  /* Color url_imagen repeat position / size  */
-  background: black url(../img/elSenorDeLosAnillos.jpg) no-repeat center /
-    contain;
-  color: white;
+  background: url(../img/elSenorDeLosAnillos.jpg) no-repeat center / cover;
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  font-family: "Pacifico", cursive;
 }
 
 .personaje {
@@ -25,20 +29,40 @@ body {
   margin: 16px 0;
 }
 
-.imagen {
-  width: 100px;
-  height: 100px;
+.float {
+  overflow: hidden;
 }
 
-p {
+.imagen {
+  width: 150px;
+  margin: 16px;
+}
+
+h3 {
+  margin-bottom: 8px;
+  font-family: "Pacifico", cursive;
+}
+
+.texto {
   margin: 0 0 16px 16px;
   width: 400px;
+  display: flex;
+  flex-direction: column;
+  font-family: "Indie Flower", cursive;
+}
+
+address {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
 }
 
 @media screen and (max-width: 320px) {
   .portada {
     background: none;
-    display: none;
+    font-size: 11px;
+    margin: 8px;
   }
   p {
     font-size: 8px;
@@ -48,6 +72,9 @@ p {
   .portada {
     height: 250px;
     font-size: 12px;
+  }
+  p {
+    font-size: 14px;
   }
 }
 
