@@ -1,0 +1,120 @@
+:root {
+  --font: "Roboto", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+header,
+h2 {
+  font-family: var(--font);
+  font-weight: 400;
+}
+
+.contenedor {
+  display: flex;
+  justify-content: center;
+}
+
+header {
+  width: 698px;
+  background: black;
+  color: white;
+  font-size: 8px;
+  padding: 8px;
+  display: flex;
+  position: fixed;
+  top: 0;
+}
+
+.camara {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.album article h2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.album article p {
+  font-size: 12px;
+  color: rgb(163, 163, 163);
+  font-family: var(--font);
+  font-weight: 300;
+  margin: 12px;
+}
+
+.album {
+  width: 54%;
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+button {
+  width: 150px;
+  padding: 8px;
+  color: white;
+}
+
+.boton1 {
+  margin-right: 16px;
+  background-color: rgb(0, 89, 253);
+}
+
+.boton2 {
+  background-color: grey;
+}
+.boton3,
+.boton4 {
+  background: transparent;
+  width: 50px;
+  color: black;
+}
+
+.boton-section {
+  margin-top: 8px;
+  display: flex;
+  justify-content: center;
+}
+
+.boton-section button {
+  font-size: 12px;
+  padding: 4px;
+  margin-left: 4px;
+}
+
+.basic-grid {
+  display: grid;
+  grid-template-columns: 33% 33% auto;
+  gap: 10px 20px;
+}
+
+.item {
+  border-radius: 5px;
+  background: url(../img/juego-de-tronos.jpg) no-repeat center / cover;
+}
+
+.grid {
+  display: grid;
+  grid-template: 200px / 1fr;
+  gap: 8px;
+}
+
+.grid-contenedor {
+  display: grid;
+  grid-template-columns: 250px 250px 250px;
+  gap: 20px;
+  justify-content: center;
+}
