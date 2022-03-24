@@ -1,0 +1,236 @@
+@import "vars";
+@import "mixins";
+
+* {
+  @include reset;
+}
+
+.contenedor {
+  max-width: 800px;
+  height: 100vh;
+  margin: 20px auto;
+  border: 1px solid $negro;
+  /* Pone el scroll en la derecha */
+  overflow: scroll;
+}
+
+.index-header {
+  width: 100%;
+  background: $negro;
+  color: $blanco;
+  font-size: 8px;
+  padding: 8px;
+  display: flex;
+}
+
+.camara {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.album {
+  article {
+    h2 {
+      @include display;
+      padding-top: 50px;
+    }
+  }
+}
+.album {
+  article {
+    p {
+      font-size: 12px;
+      color: rgb(163, 163, 163);
+      margin: 12px;
+    }
+  }
+}
+
+.album {
+  width: 300px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.botones {
+  @include display;
+}
+
+button {
+  width: 150px;
+  padding: 8px;
+  color: $blanco;
+}
+
+.contacto {
+  margin-right: 16px;
+  background-color: $btn-primary;
+}
+
+.contacto {
+  &:hover {
+    background-color: $btn-secondary;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $blanco;
+}
+
+.secondary {
+  background-color: $gris;
+}
+.view {
+  background: $transparente;
+  width: 50px;
+  color: $negro;
+  margin-right: 8px;
+}
+
+.edit {
+  @extend .view;
+}
+
+.boton-section {
+  margin-top: 8px;
+  width: 250px;
+  font-size: 12px;
+  display: flex;
+}
+
+.boton-section {
+  button {
+    width: 50px;
+    font-size: 12px;
+    padding: 4px;
+    margin-bottom: 16px;
+  }
+}
+
+img {
+  @include dimensiones(250px, 200px);
+}
+
+.card {
+  @include display;
+  margin: auto;
+  margin-right: 70px;
+
+  article {
+    @include dimensiones(290px, 300px);
+    margin-left: 64px;
+    color: $negro;
+    margin-top: 100px;
+    @include display;
+    font-size: 12px;
+    flex-direction: column;
+    border: 1px solid $negro;
+    box-shadow: 5px 5px 8px $sombra;
+
+    picture {
+      @include display;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+
+    p {
+      width: 200px;
+    }
+  }
+}
+
+footer {
+  position: sticky;
+  top: 100%;
+  background: $negro;
+  border: 1px solid $negro;
+  height: 80px;
+  color: $blanco;
+  @include display;
+  margin-top: 32px;
+}
+
+// formulario
+
+.form-body {
+  background: $fondo-body-form;
+  font-family: $font-body;
+}
+
+.form-main {
+  background: $fondo-form;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  @include display;
+  flex-direction: column;
+}
+
+.formulario {
+  margin: 32px;
+}
+
+.form-title {
+  color: $naranja;
+  text-align: center;
+  padding-top: 24px;
+  font-size: 30px;
+}
+
+h6 {
+  margin-top: 32px;
+  font-weight: 700;
+  color: $tituloh6;
+}
+
+input {
+  border-radius: 5px;
+  box-shadow: 5px 5px 8px $sombra;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  border: none;
+  outline: none;
+  color: $contenido;
+}
+
+textarea {
+  @extend input;
+  resize: vertical;
+}
+
+input[type="text"] {
+  margin-bottom: 16px;
+}
+
+label {
+  color: $sombra;
+  font-size: 12px;
+}
+
+::placeholder {
+  color: $placeHolder;
+}
+
+input[type="submit"] {
+  background: $fondo-body-form;
+  color: $sombra;
+}
+
+input {
+  &:focus {
+    border: 2px solid $fondo-body-form;
+  }
+}
+
+textarea {
+  &:focus {
+    border: 2px solid $fondo-body-form;
+  }
+}
