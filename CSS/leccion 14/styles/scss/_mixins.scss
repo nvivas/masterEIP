@@ -1,0 +1,19 @@
+@import "vars";
+
+@mixin display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin dimensiones($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+
+@mixin reset {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-body;
+}
