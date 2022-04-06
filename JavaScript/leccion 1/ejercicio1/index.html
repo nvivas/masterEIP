@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<script>
+    // ejercicio 1
+    console.log("EJERCICIO número 1");
+    // fecha fin
+    var fecha1 = new Date("2023/01/1");
+    // fecha de hoy
+    var fecha2 = new Date();
+
+    // resta la fecha fin a la de hoy en milisegundos
+    var resta = fecha1.getTime() - fecha2.getTime();
+    // Convierto a días los milisegundos
+    var dia = Math.round((resta / (1000 * 60 * 60 * 24)));
+
+    console.log("Quedan " + dia + " hasta el  " + fecha1.toLocaleDateString());
+    console.log(fecha2);
+
+</script>
+
+<body>
+
+</body>
+
+</html>
