@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<script>
+
+  // ejecicio 2
+  console.log("EJERCICIO número 2");
+
+  var contador = 0;
+  var cadena =
+    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor, molestias beatae? Molestias labore iusto, sit laborum asperiores aliquam dolorem laudantium vero amet odio assumenda explicabo vel reiciendis accusantium rem quisquam, consectetur dolore in ea omnis eveniet praesentium commodi ipsam? Quibusdam, cupiditate ratione fuga voluptatem dignissimos laboriosam enim velit accusamus quasi.";
+
+  // cuento los espacios que hay
+  for (var i = 0; i < cadena.length; i++) {
+    if (cadena.substring(i, i + 1) == " ") {
+      contador++;
+    }
+  }
+  // le sumo uno porque al final no tiene espacio y sino no faltaría una
+  contador++;
+
+  console.log("Hay " + contador + " palabras");
+
+</script>
+
+<body>
+
+</body>
+
+</html>
