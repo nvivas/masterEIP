@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="Ejercicio 2">
+
+    <script>
+        /*
+            2.- Definir una función que sirva para ver si un número es primo o no.
+        */
+
+        const esPrimo = (num) => {
+            // Inicializar variables
+            let primo = false;
+            let cont = 0;
+
+            for (let i = 2; i < num; i++) {
+                // si hay algún número que sea divisible, no es primo
+                if (num % i == 0) {
+                    cont++
+                    break;
+                }
+            }
+
+            // si el contador es 0, entonces es primo 
+            if (cont == 0) {
+                primo = true
+                console.log(`${num}: Es primo`);
+            } else {
+                console.warn(`${num}: No es primo`);
+            }
+            return primo;
+        }
+
+        // Llamada a la función
+        esPrimo(15);
+        esPrimo(25);
+        esPrimo(21);
+        esPrimo(3);
+        esPrimo(5);
+        esPrimo(7);
+        esPrimo(11);
+        esPrimo(13);
+        esPrimo(14);
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>
