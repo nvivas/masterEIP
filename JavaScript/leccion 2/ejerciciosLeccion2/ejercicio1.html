@@ -18,29 +18,19 @@
         // Función de flecha
         const palindromo = (cadena) => {
             // Inicialización de la variable
-            let alReves = "";
+            let alReves = cadena.split(',').join('').split(' ').join('');
+            let deCara = cadena.split(',').join('').split(' ').join('');
+            let alReves2 = "";
 
-            // Primer blucle para darle la vuelta a la cadena 
-            for (let i = cadena.length; i > 0; i--) {
+            // Blucle para darle la vuelta a la cadena 
+            for (let i = alReves.length; i > 0; i--) {
                 // si la posición es igual a espacio no entra y no lo guarda en alReves
-                if (cadena.charAt(i - 1) != " ") {
-                    alReves += cadena.charAt(i - 1);
-                }
-            }
-
-            // Inicialización de la variable
-            let deCara = "";
-
-            // Segundo blucle para coger la cadena sin espacios 
-            for (let i = 0; i < cadena.length; i++) {
-                if (cadena.charAt(i) != " ") {
-                    deCara += cadena.charAt(i);
-                }
+                alReves2 += alReves.charAt(i - 1);
             }
 
             // comparación de cadenas. Si la cadena está vacía, saca un error, sino lo ejecuta
             cadena.length != 0 ?
-                deCara.toLowerCase() == alReves.toLowerCase() ?
+                deCara.toLowerCase() == alReves2.toLowerCase() ?
                     console.log(`${cadena}: Es palíndromo`) :
                     console.warn(`${cadena}: No es un palíndromo`) :
                 console.error("La cadena está vacía");
