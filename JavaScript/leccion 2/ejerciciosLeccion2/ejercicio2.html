@@ -19,34 +19,44 @@
             let primo = false;
             let cont = 0;
 
-            for (let i = 2; i < num; i++) {
-                // si hay algún número que sea divisible, no es primo
-                if (num % i == 0) {
-                    cont++
-                    break;
+            if (isNaN(num) && num != undefined) {
+                console.error(`${num} no es un número`);
+            } else {
+                for (let i = 2; i < num; i++) {
+                    // si hay algún número que sea divisible, no es primo
+                    if (num % i == 0) {
+                        cont++
+                        break;
+                    }
+                }
+
+                // si el contador es 0, entonces es primo 
+                if (num == undefined) {
+                    return console.error("No se ha insertado ningún valor");
+                } else {
+                    if (cont == 0) {
+                        primo = true
+                        console.log(`${num}: Es primo`);
+                    } else {
+                        console.warn(`${num}: No es primo`);
+                    }
+                    return primo;
                 }
             }
-
-            // si el contador es 0, entonces es primo 
-            if (cont == 0) {
-                primo = true
-                console.log(`${num}: Es primo`);
-            } else {
-                console.warn(`${num}: No es primo`);
-            }
-            return primo;
         }
 
         // Llamada a la función
         esPrimo(15);
-        esPrimo(25);
-        esPrimo(21);
         esPrimo(3);
+        esPrimo(25);
         esPrimo(5);
+        esPrimo(21);
         esPrimo(7);
         esPrimo(11);
         esPrimo(13);
         esPrimo(14);
+        esPrimo();
+        esPrimo("hola");
     </script>
 
 </head>

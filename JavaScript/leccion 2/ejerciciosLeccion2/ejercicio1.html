@@ -17,23 +17,26 @@
 
         // Función de flecha
         const palindromo = (cadena) => {
-            // Inicialización de la variable
-            let alReves = cadena.split(',').join('').split(' ').join('');
-            let deCara = cadena.split(',').join('').split(' ').join('');
-            let alReves2 = "";
+            if (!isNaN(cadena) && cadena != "") {
+                console.error(`${cadena} no es una cadena`);
+            } else {
+                // Inicialización de la variable
+                let deCara = cadena.replaceAll(",", "").replaceAll(" ", "");
+                let alReves = "";
 
-            // Blucle para darle la vuelta a la cadena 
-            for (let i = alReves.length; i > 0; i--) {
-                // si la posición es igual a espacio no entra y no lo guarda en alReves
-                alReves2 += alReves.charAt(i - 1);
+                // Blucle para darle la vuelta a la cadena 
+                for (let i = deCara.length; i > 0; i--) {
+                    // si la posición es igual a espacio no entra y no lo guarda en alReves
+                    alReves += deCara.charAt(i - 1);
+                }
+
+                // comparación de cadenas. Si la cadena está vacía, saca un error, sino lo ejecuta
+                cadena.length != 0 ?
+                    deCara.toLowerCase() == alReves.toLowerCase() ?
+                        console.log(`${cadena}: Es palíndromo`) :
+                        console.warn(`${cadena}: No es un palíndromo`) :
+                    console.error("La cadena está vacía");
             }
-
-            // comparación de cadenas. Si la cadena está vacía, saca un error, sino lo ejecuta
-            cadena.length != 0 ?
-                deCara.toLowerCase() == alReves2.toLowerCase() ?
-                    console.log(`${cadena}: Es palíndromo`) :
-                    console.warn(`${cadena}: No es un palíndromo`) :
-                console.error("La cadena está vacía");
         }
         // Llamada a la función
         palindromo("La ruta nos aporto otro paso natural");
@@ -42,7 +45,8 @@
         palindromo("A ti no, bonita");
         palindromo("Habrá un día en que todos al levantar la vista veremos una tierra que ponga: Libertad");
         palindromo("");
-
+        palindromo(123);
+        palindromo(12321);
     </script>
 </head>
 

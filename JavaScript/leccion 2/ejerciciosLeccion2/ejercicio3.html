@@ -28,30 +28,38 @@ d) Una vez calculada la letra, se debe comparar con la letra indicada por el usu
         comprobarDNI(25184685, "F");
         comprobarDNI(25184685, "R");
         comprobarDNI(25184685, "O");
+        comprobarDNI("PO");
+        comprobarDNI(25184685);
+        comprobarDNI();
 
         function comprobarDNI(numero, letraDNI) {
             // Inicializo las variables
             let letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K', 'E', 'T'];
 
-            let letra = numero % 23;
-            let noEsta = letras.indexOf(letraDNI.toUpperCase());
-
-            // que el número este entre 0 y 99999999 y que número no sea vacio
-            let comprobar = numero > 0 && numero <= 99999999 ? true : false;
-
-            // si comprobar es menor que 9 o mayor que 99999999 va al falso
-            if (!comprobar) {
-                console.error(`${numero} No es válido`);
+            if (numero == undefined || letraDNI == undefined) {
+                console.error("Falta algún parámetro por introducir");
             } else {
-                // si comprobar es true
-                if (letraDNI.toUpperCase() == letras[letra]) {
-                    console.log(`${numero}-${letras[letra]} son correctos`);
+                let letra = numero % 23;
+                // buscar la letra del DNI en mayúsculas
+                let noEsta = letras.indexOf(letraDNI.toUpperCase());
+
+                // que el número este entre 0 y 99999999
+                let comprobar = numero > 0 && numero <= 99999999 ? true : false;
+
+                // si "comprobar" es falso
+                if (!comprobar) {
+                    console.error(`${numero} No es válido`);
                 } else {
-                    if (noEsta != -1 && (letraDNI.toUpperCase() != letras[letra])) {
-                        console.warn(`"${letraDNI.toUpperCase()}" No coincide con la letra del dni ${numero}`);
-                    }
-                    if (noEsta == -1) {
-                        console.error(`La letra "${letraDNI}" No existe en el patrón`);
+                    // si comprobar es true
+                    if (letraDNI.toUpperCase() == letras[letra]) {
+                        console.log(`${numero}-${letras[letra]} son correctos`);
+                    } else {
+                        if (noEsta != -1 && (letraDNI.toUpperCase() != letras[letra])) {
+                            console.warn(`"${letraDNI.toUpperCase()}" No coincide con la letra del dni ${numero}`);
+                        }
+                        if (noEsta == -1) {
+                            console.error(`La letra "${letraDNI}" No existe en el patrón`);
+                        }
                     }
                 }
             }

@@ -26,44 +26,58 @@
         console.log("------------------------------------------");
         multiplos(1);
         console.log("------------------------------------------");
-        multiplos(9);
+        multiplos(3);
         console.log("------------------------------------------");
+        multiplos("A");
+        multiplos();
+
+        // TODO si está vacío
 
         function multiplos(num) {
-            // inicializar variables
-            let cont = 0;
-            let arrayMultiplos = new Array();
+            if (isNaN(num) && num != undefined) {
+                console.error(`${num} no es un número`);
+            } else if (num == undefined) {
+                console.error("Falta el parámetro");
+            } else {
+                // inicializar variables
+                let cont = 0;
+                let arrayMultiplos = new Array();
 
-            // hacer hasta que contador llegue a 200
-            while (cont != 200) {
-                // multiplo de 5
-                if (num % 5 == 0) {
-                    // añadir al array
-                    arrayMultiplos.push(num);
+                // hacer hasta que contador llegue a 200
+                while (cont != 200) {
+                    // multiplo de 5
+                    if (num % 5 == 0) {
+                        // añadir al array
+                        arrayMultiplos.push(num);
 
-                    // sumar uno a contador
-                    cont++;
+                        // sumar uno a contador
+                        cont++;
+                        // sumar 5 para que no trabaje por todos los números
+                        num += 5;
+                    }
+                    // sumar uno a número si contador es 0
+                    if (cont == 0) {
+                        num++;
+                    }
                 }
-                // sumar uno a número
-                num++;
+                // mostrar los elementos del array
+                console.log(arrayMultiplos);
+
+                //  Por consola, indicar el valor que ocupa el índice 43 y el último.
+                let longitud = arrayMultiplos.length;
+                console.log(`El elemento en la posición 43 del array es ${arrayMultiplos.slice(43, 44)}`);
+                console.log(`El último elemento del array es ${arrayMultiplos.slice(longitud - 1)}`);
+
+                //  Por consola, sumar los 63 últimos valores de ese array y mostrar su resultado.
+                let suma = 0;
+                // recorrer el array desde para coger los últimos 63 valores
+                for (let i = longitud - 63; i < longitud; i++) {
+                    suma += arrayMultiplos[i];
+                }
+
+                // mostrar la suma
+                console.log(`la suma de los últimos 63 valores del array es ${suma}`);
             }
-            // mostrar los elementos del array
-            console.log(arrayMultiplos);
-
-            //  Por consola, indicar el valor que ocupa el índice 43 y el último.
-            let longitud = arrayMultiplos.length;
-            console.log(`El elemento en la posición 43 del array es ${arrayMultiplos.slice(43, 44)}`);
-            console.log(`El último elemento del array es ${arrayMultiplos.slice(longitud - 1)}`);
-
-            //  Por consola, sumar los 63 últimos valores de ese array y mostrar su resultado.
-            let suma = 0;
-            // recorrer el array desde para coger los últimos 63 valores
-            for (let i = longitud - 63; i < longitud; i++) {
-                suma += arrayMultiplos[i];
-            }
-
-            // mostrar la suma
-            console.log(`la suma de los últimos 63 valores del array es ${suma}`);
         }
     </script>
 </head>
