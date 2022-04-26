@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leccion 3</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="leccion 3">
+
+    <script>
+
+        // ver consola
+        console.clear();
+        console.error("Esto es un error");
+        console.warn("Esto es un aviso");
+        console.info("Esto es un mensaje de información");
+        console.debug("Esto es un debug");
+        console.log("Esto es un log");
+
+        // mostrar valores de un array
+
+        let lapiz = ["rojo", "amarillo", "verde"];
+        console.log("El array completo es: " + lapiz);
+
+        console.warn("El índice de azul es " + lapiz.indexOf("azul"));
+        console.warn("El índice de verde es " + lapiz.indexOf("verde"));
+
+
+        // for (let i = 0; i < lapiz.length; i++) {
+        //     const element = lapiz[i];
+
+        //     // let item = {
+        //     //     esRojo: "rojo",
+        //     //     esVerde: "verde"
+        //     // }
+        //     console.log(element);
+        //     console.log(item);
+        // }
+
+
+        let numeros = [2, 8, 345, 1, 32, 54, 3, 676];
+
+        // lo ordena por UNICODE
+        console.log(numeros.sort());
+
+
+        // Funciones
+
+        function suma(num, num1) {
+            let suma = num + num1;
+            console.log("La suma es: " + suma);
+        }
+
+        suma(2, 4);
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+
+</head>
+
+<body>
+
+</body>
+
+</html>

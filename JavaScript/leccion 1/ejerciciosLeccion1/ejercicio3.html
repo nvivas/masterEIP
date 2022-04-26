@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 3</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="Ejercicio3">
+
+    <script>
+        //  3.- Sabiendo que un año es bisiesto cuando, tras dividir entre 4 su número, el resto de la división es cero, y que si el último de cada siglo es también divisible por 400, calcular y visualizar por la consola los años bisiestos existentes desde 1586 a 1749, e indicar cuántos años bisiestos son.
+
+        // Se inicializa el contador a 0 
+        let cont = 0;
+
+        for (let i = 1586; i < 1750; i++) {
+            if (esBisiesto(i)) {
+                // Se suma uno al contador para mostrar después la cantidad
+                cont++;
+                console.log(`Año ${cont}: El año ${i} es bisiesto`);
+                // console.log("Año " + cont + ": El año " + i + " es bisiesto");
+            }
+        }
+        console.log(`Hay ${cont} años bisiestos`);
+        // console.log("Hay " + cont + " años bisiestos");
+
+        // funcion para saber si es bisiesto
+        function esBisiesto(anno) {
+            // inicializo el booleano
+            let bisiesto = false;
+            if (anno % 4 == 0 && (anno % 100 != 0 || anno % 400 == 0)) {
+                bisiesto = true;
+            }
+            // devuelve true o false
+            return bisiesto;
+        }
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

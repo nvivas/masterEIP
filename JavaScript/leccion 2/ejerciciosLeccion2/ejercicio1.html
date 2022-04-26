@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="Ejercicio 1">
+
+    <script>
+        /*
+            1.- Definir una función que determine si la cadena de texto que se le pasa como parámetro es un palíndromo, es decir, si se lee de la misma forma desde la izquierda que desde la derecha.
+            Ejemplo de palíndromo complejo: "La ruta nos aporto otro paso natural".
+            */
+
+        // Función de flecha
+        const palindromo = (cadena) => {
+            if (!isNaN(cadena) && cadena != "") {
+                console.error(`${cadena} no es una cadena`);
+            } else {
+                // Inicialización de la variable
+                let deCara = cadena.replaceAll(",", "").replaceAll(" ", "");
+                let alReves = "";
+
+                // Blucle para darle la vuelta a la cadena 
+                for (let i = deCara.length; i > 0; i--) {
+                    // si la posición es igual a espacio no entra y no lo guarda en alReves
+                    alReves += deCara.charAt(i - 1);
+                }
+
+                // comparación de cadenas. Si la cadena está vacía, saca un error, sino lo ejecuta
+                cadena.length != 0 ?
+                    deCara.toLowerCase() == alReves.toLowerCase() ?
+                        console.log(`${cadena}: Es palíndromo`) :
+                        console.warn(`${cadena}: No es un palíndromo`) :
+                    console.error("La cadena está vacía");
+            }
+        }
+        // Llamada a la función
+        palindromo("La ruta nos aporto otro paso natural");
+        palindromo("Polvo, niebla, viento y sol, y donde hay agua una huerta. Al norte los Pirineos: esta tierra es Aragón");
+        palindromo("A luna ese anula");
+        palindromo("A ti no, bonita");
+        palindromo("Habrá un día en que todos al levantar la vista veremos una tierra que ponga: Libertad");
+        palindromo("");
+        palindromo(123);
+        palindromo(12321);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
