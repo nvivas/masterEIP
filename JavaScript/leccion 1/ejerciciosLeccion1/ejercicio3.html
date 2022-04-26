@@ -16,24 +16,26 @@
         let cont = 0;
 
         for (let i = 1586; i < 1750; i++) {
-            // que sea divisible entre 4 pero no entre 400
-            if (i % 4 == 0 && i % 400 != 0) {
+            if (esBisiesto(i)) {
                 // Se suma uno al contador para mostrar después la cantidad
                 cont++;
-                console.log("Año " + cont + ": El año " + i + " es bisiesto");
+                console.log(`Año ${cont}: El año ${i} es bisiesto`);
+                // console.log("Año " + cont + ": El año " + i + " es bisiesto");
             }
         }
-        console.log("Hay " + cont + " años bisiestos");
+        console.log(`Hay ${cont} años bisiestos`);
+        // console.log("Hay " + cont + " años bisiestos");
 
-
-
-
-
-
-
-
-
-
+        // funcion para saber si es bisiesto
+        function esBisiesto(anno) {
+            // inicializo el booleano
+            let bisiesto = false;
+            if (anno % 4 == 0 && (anno % 100 != 0 || anno % 400 == 0)) {
+                bisiesto = true;
+            }
+            // devuelve true o false
+            return bisiesto;
+        }
     </script>
 </head>
 
