@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 2</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="Ejercicio2">
+
+    <script>
+        //  2.- Visualizar por la consola los 337 números impares siguientes a partir del número 52 y calcular la suma de todos ellos.
+
+        // inicializo las variables
+        let cont = 0;
+        let suma = 0;
+        let num = 52;
+
+        // Se itera mientras que cont sea menor que 337 
+        while (cont < 337) {
+            // si el resto de la división entre 2 es diferente de 0 es impar
+            if (num % 2 != 0) {
+                // sumo 1 al contador
+                cont++;
+                console.log("Impar número " + cont + ": ", num);
+                // suma = suma + num
+                suma += num;
+            }
+            // sumo 1 al número hasta acabar el bucle
+            num++;
+        }
+
+        console.log("La suma de los impares es: " + suma);
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

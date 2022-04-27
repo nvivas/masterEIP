@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="Ejercicio4">
+
+    <script>
+        //  4.- Un número primo es un número que solo puede dividirse por sí mismo y por 1, no teniendo ningún otro divisor. Calcular y visualizar por la consola los 100 números primos posteriores a 200 y calcular su suma.
+
+        // Número que vamos a evaluar
+        let num = 11;
+
+        // inicializamos el contador
+        cont = 0;
+
+        // Como un primo es divisible por 1 y por si mismo, solo se tienen en cuenta el resto de número comprendidos en 1 y el número 
+        for (let i = 2; i < num; i++) {
+            // si hay algún número que sea divisible, no es primo
+            if (num % i == 0) {
+                cont++
+                break;
+            }
+        }
+        // si el contador es 0, entonces es primo 
+        if (cont == 0) {
+            // document.write("El número " + num + " es primo");
+            console.log("El número " + num + " es primo");
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
