@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css?family=Bad+Script|Bellefair|Comfortaa|Satisfy|Slabo+27px|Vidaloka");
+
+:root {
+  --fondo: rgb(7, 7, 7);
+  --letras: white;
+}
+
+body {
+  background: var(--fondo);
+  color: var(--letras);
+
+  padding: 16px;
+  text-align: justify;
+}
+
+.header {
+  /* Color url_imagen repeat position / size  */
+  background: var(--fondo) url(../img/juegos-de-mesa.jpg) repeat center / cover;
+  height: 100px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 8px;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+nav menu {
+  height: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px white solid;
+  background: rgb(104, 102, 102);
+}
+
+nav menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+  font-size: 1.05rem;
+}
+
+nav menu li a:hover,
+.active {
+  color: white;
+}
+
+.pocimas a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+  font-size: 1.05rem;
+}
+
+aside {
+  min-width: 170px;
+  margin-right: 16px;
+}
+
+aside a {
+  color: rgba(131, 12, 12, 0.808);
+}
+
+aside ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+aside li {
+  list-style-type: none;
+  text-align: center;
+}
+
+section {
+  width: 700px;
+}
+
+.articulo .float :nth-child(2) {
+  color: yellow;
+}
+.articulo .float :nth-child(4) {
+  color: red;
+}
+
+.articulo .float :nth-child(6) {
+  color: purple;
+}
+
+.left {
+  float: left;
+  width: 180px;
+  margin: 30px 16px 16px 0;
+  box-shadow: 3px 3px 3px rgb(255, 0, 0);
+}
+
+.main_inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juegos de mesa</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="Juegos de mesa favoritos">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/pestanas.css">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script type="text/javascript" src="js/cambiarPestanna.js"></script>
+</head>
+
+<body onload="javascript:cambiarPestanna(pestanas,pestana1);">
+    <header class="header">
+        <h1>Juegos de mesa</h1>
+    </header>
+    <nav>
+        <menu>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="juegosMesa.html" class="active">Juegos de mesa</a></li>
+            <li><a href="gatos.html">Rol ESDLA</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+
+        </menu>
+    </nav>
+    <nav>
+        <menu>
+            <li><a href="juegosMesa.html">Isla de los gatos</a></li>
+            <li><a href="pocimas.html" class="active">Pócimas y brebajes</a></li>
+            <li><a href="castillos.html">Castillos de Borgoña</a></li>
+
+        </menu>
+    </nav>
+    <main class="main_juegos">
+        <section class="isla_gatos">
+            <article>
+                <h2>Pócimas y Brebajes</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, molestias?</p>
+                <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
+                <div class="contenedor">
+                    <div id="pestanas">
+                        <ul id=lista>
+                            <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Descripción</a>
+                            </li>
+                            <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Detalles</a></li>
+                            <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>Dónde Comprar</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="contenidopestanas">
+                        <div id="cpestana1">
+                            Pócimas y brebajes
+                        </div>
+                        <div id="cpestana2">
+                            Pócimas y brebajes
+                        </div>
+                        <div id="cpestana3">
+                            Pócimas y brebajes
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+</body>
+
+</html>
