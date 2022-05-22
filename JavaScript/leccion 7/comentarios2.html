@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+
+        let contador = 1;
+
+        function agregar() {
+            let elemento = document.createElement('p');
+            let texto = document.createTextNode('Agregar línea: ' + contador);
+            contador++;
+
+            elemento.appendChild(texto);
+            let idCapa = document.getElementById("capa");
+            idCapa.appendChild(elemento);
+        }
+
+        function eliminar() {
+            let idCapa = document.getElementById("capa");
+
+            if (idCapa.children.length > 0) {
+                idCapa.removeChild(idCapa.children[0]);
+            }
+        }
+        function eliminar_ultimo() {
+            let idCapa = document.getElementById("capa");
+
+            if (idCapa.children.length > 0) {
+                let nodo = idCapa.children.length - 1;
+                idCapa.removeChild(idCapa.children[nodo]);
+            }
+        }
+
+        function eliminar_segundo() {
+            let idCapa = document.getElementById("capa");
+            if (idCapa.children.length > 1) {
+                idCapa.removeChild(idCapa.children[1]);
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div id="capa">
+    </div>
+    <input type="button" value="Agregar nodo de tipo elemento" onclick="agregar()">
+    <input type="button" value="Eliminar primer nodo de tipo elemento" onclick="eliminar()">
+    <input type="button" value="Eliminar último nodo de tipo elemento" onclick="eliminar_ultimo()">
+    <input type="button" value="Eliminar último nodo de tipo elemento" onclick="eliminar_segundo()">
+
+</body>
+
+</html>
