@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leccion 2 Eventos</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="Eventos">
+
+    <script>
+        // para asignar el evento
+        window.onload = function () {
+            function rellenaTexto1() {
+                document.getElementById("texto1").value = Math.PI;
+            }
+
+            // cuando se hace click
+            document.getElementById("boton1").onclick = rellenaTexto1;
+            // cuando sale el ráton del botón se rellena
+            document.getElementById("boton2").onmouseleave = rellenaTexto1;
+        }
+
+        function mostrarPI() {
+            alert(Math.PI);
+        }
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <!-- <input type="submit" value="Enviar" onclick="alert('has pulsado el botón')">
+    <div>onmouseover</div>
+    <div id="DatosCliente" style="height: 200px; width: 300px; border: solid greenyellow"
+        onmouseover="this.style.borderColor= 'red';" onmouseleave="this.style.borderColor= 'greenyellow';">
+    </div>
+    <input type="submit" value="Muéstrame el número PI" onclick="mostrarPI()"> -->
+
+    <!-- clase 8 -->
+    <input type="text" id="texto1">
+    <input type="button" value="Rellena Texto1" id="boton1">
+    </br>
+    <input type="button" value="Rellena Texto1" id="boton2">
+    </br>
+
+    <!-- El script se tiene que poner después porque se tiene que cargar con la página -->
+    <ul>
+        <li><label alt="amarilla">Primer Item</label></li>
+        <li><label alt="roja" id="roja">Segundo Item</label></li>
+        <li><label alt="verde">Tercero Item</label></li>
+        <li><label alt="azul">Cuarto Item</label></li>
+    </ul>
+
+    <script>
+        document.getElementById("roja").addEventListener("click",
+            function () {
+                alert("click en el botón");
+            }, false);
+    </script>
+
+
+
+
+
+
+
+
+
+
+</body>
+
+</html>
