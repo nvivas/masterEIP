@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function insertar() {
+            let elemento = document.createElement('p');
+            let texto = document.createTextNode('Párrafo entre el segundo y el tercero');
+            elemento.appendChild(texto);
+            let parrafo = document.getElementById("p3");
+            let idCapa = document.getElementById("capa");
+            idCapa.insertBefore(elemento, parrafo);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="capa">
+        <p>Este es el párrafo 1</p>
+        <p>Este es el párrafo 2</p>
+        <p id="p3">Este es el párrafo 3</p>
+        <p>Este es el párrafo 4</p>
+        <p>Este es el párrafo 5</p>
+    </div>
+    <input type="button" value="Insertar" onclick="insertar()">
+
+</body>
+
+</html>

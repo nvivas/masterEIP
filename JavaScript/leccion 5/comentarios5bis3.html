@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manejo del DOM</title>
+
+    <script>
+
+        function cambiaColor() {
+            let idPresentacion = document.getElementById("presentacion");
+            idPresentacion.style.color = "#ff0000";
+        }
+
+        function cambiaDimensiones() {
+            let idPresentacion = document.getElementById("presentacion");
+            idPresentacion.style.fontSize = '60px';
+        }
+
+
+
+
+    </script>
+</head>
+
+<body>
+    <h1 id="presentacion">En un lugar de la Mancha</h1>
+    <input type="button" value="Cambiar Color" onclick="cambiaColor()">
+    <input type="button" value="Cambiar Tamaño" onclick="cambiaDimensiones()">
+
+
+
+
+
+</body>
+
+</html>

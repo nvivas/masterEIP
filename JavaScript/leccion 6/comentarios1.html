@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <meta name="author" content="Ignacio Vivas Martín" />
+    <meta name="description" content="Lorem, ipsum dolor sit amet consectetur adipisicing elit.">
+
+    <script>
+        function ver_hijos() {
+            let primero = document.getElementById("primera_capa");
+            alert("Nodos de la primera capa: " + primero.childNodes.length);
+
+        }
+    </script>
+
+</head>
+
+<body>
+    <div id="primera_capa">
+        <p>Parrafo uno</p>
+        <p>Parrafo dos</p>
+        <p>Parrafo tres</p>
+    </div>
+    <div id="segunda_capa">
+        <p>Parrafo uno</p>
+        <p>Parrafo dos</p>
+        <p>Parrafo tres</p>
+    </div>
+    <div id="tercera_capa">
+        <p>Parrafo uno</p>
+        <p>Parrafo dos</p>
+        <p>Parrafo dos bis</p>
+        <p>Parrafo tres</p>
+    </div>
+    <input type="button" value="Presiona para ver hijos" onclick="ver_hijos">
+</body>
+
+</html>
