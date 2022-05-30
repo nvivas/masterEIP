@@ -37,7 +37,7 @@ nav menu {
   justify-content: space-around;
   align-items: center;
   border: 1px white solid;
-  background: rgb(104, 102, 102);
+  background: transparent;
 }
 
 nav menu li a {
