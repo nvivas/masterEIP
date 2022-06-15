@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enlaces</title>
+    <script src="../jquery-3.6.0.js"></script>
+    <script>
+        let d = $(document);
+        d.ready(operacion);
+
+        function operacion() {
+            let p = $('button');
+            p.click(resaltar);
+        }
+
+        function resaltar() {
+            let k = $('h1');
+            k.css('background', 'red');
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <button>Operación</button><br>
+    <p>Soy un párrafo</p>
+    <p id="parrafo"> Con ID</p>
+    <h1 id="parrafo">Título h1 con id</h1>
+    <h1>Soy otro título</h1>
+</body>
+
+</html>
