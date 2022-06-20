@@ -1,0 +1,119 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif; }
+
+body {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  text-align: justify; }
+
+.respmenu a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid #456789;
+  max-width: 200px;
+  background: #234567;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black; }
+
+h1 {
+  /* Color url_imagen repeat position / size  */
+  background: black url(../img/juegos-de-mesa.jpg) repeat center/cover;
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 8px; }
+
+nav {
+  position: sticky;
+  top: 0; }
+
+nav menu {
+  height: 50px;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border: 1px white solid;
+  background: transparent; }
+
+nav menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+  font-size: 1.05rem; }
+nav menu li a:hover,
+nav menu li .active {
+  color: white; }
+
+.pocimas a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+  font-size: 1.05rem; }
+
+aside {
+  min-width: 170px;
+  margin-right: 16px; }
+
+aside a {
+  color: #830c0cce; }
+aside ul {
+  padding-left: 0;
+  text-align: center; }
+aside li {
+  list-style-type: none;
+  text-align: center; }
+
+section {
+  width: 700px; }
+
+.articulo .float .primero {
+  color: yellow;
+  margin-top: 20px; }
+.articulo .float .segundo {
+  color: red;
+  margin-top: 20px; }
+.articulo .float .tercero {
+  color: purple;
+  margin-top: 20px; }
+
+.left {
+  float: left;
+  width: 180px;
+  margin: 30px 16px 16px 0;
+  box-shadow: 3px 3px 3px red; }
+
+.main_inicio {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+address {
+  height: 100px; }
+
+.reloj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%; }
+  .reloj #relojMovimiento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    height: 50px;
+    background: black;
+    color: white;
+    font-size: 48px;
+    border: none; }
+
+/*# sourceMappingURL=styles.css.map */

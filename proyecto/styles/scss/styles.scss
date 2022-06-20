@@ -1,0 +1,165 @@
+@import "_vars";
+@import "_mixins";
+
+* {
+  @include reset;
+}
+
+body {
+  background-color: $negro;
+  color: $blanco;
+  padding: 16px;
+  text-align: justify;
+}
+
+.respmenu {
+  a {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+    border-bottom: 2px solid #456789;
+    max-width: 200px;
+    background: #234567;
+    font-variant: small-caps;
+    text-shadow: 1px 1px black;
+  }
+}
+
+h1 {
+  /* Color url_imagen repeat position / size  */
+  background: $negro url(../img/juegos-de-mesa.jpg) repeat center / cover;
+  @include dimensiones(100%, 100px);
+  position: relative;
+  // height: 100px;
+  // width: 100%;
+  @include display;
+  margin: 8px;
+  // @include viewS {
+  //   font-size: 10px;
+  // }
+
+  // @include viewM {
+  //   font-size: 100px;
+  // }
+
+  // @include viewL {
+  //   font-size: 1000px;
+  // }
+}
+
+nav {
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  menu {
+    height: 50px;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border: 1px $blanco solid;
+    background: transparent;
+  }
+}
+
+nav {
+  menu {
+    li {
+      a {
+        cursor: pointer;
+        text-decoration: none;
+        color: $rojo;
+        font-size: 1.05rem;
+      }
+
+      a:hover,
+      .active {
+        color: $blanco;
+      }
+    }
+  }
+}
+
+.pocimas {
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: $rojo;
+    font-size: 1.05rem;
+  }
+}
+
+aside {
+  min-width: 170px;
+  margin-right: 16px;
+}
+
+aside {
+  a {
+    color: $granate;
+  }
+  ul {
+    padding-left: 0;
+    text-align: center;
+  }
+
+  li {
+    list-style-type: none;
+    text-align: center;
+  }
+}
+
+section {
+  width: 700px;
+}
+
+.articulo {
+  .float {
+    .primero {
+      color: $amarillo;
+      margin-top: 20px;
+    }
+
+    .segundo {
+      color: $rojo;
+      margin-top: 20px;
+    }
+
+    .tercero {
+      color: $purple;
+      margin-top: 20px;
+    }
+  }
+}
+
+.left {
+  float: left;
+  width: 180px;
+  margin: 30px 16px 16px 0;
+  box-shadow: 3px 3px 3px rgb(255, 0, 0);
+}
+
+.main_inicio {
+  @include display;
+}
+
+address {
+  height: 100px;
+}
+
+.reloj {
+  @include display;
+  height: 100%;
+
+  #relojMovimiento {
+    @include display;
+    @include dimensiones(300px, 50px);
+    background: $negro;
+    color: white;
+    font-size: 48px;
+    border: none;
+  }
+}
