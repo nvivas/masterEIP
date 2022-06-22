@@ -1,0 +1,36 @@
+@import "vars";
+
+@mixin display {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin dimensiones($ancho, $alto) {
+  width: $ancho;
+  height: $alto;
+}
+
+@mixin reset {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: $font-body;
+}
+
+// media query
+@mixin viewS {
+  @media (min-width: 320px) {
+    @content;
+  }
+}
+@mixin viewM {
+  @media (min-width: 768) {
+    @content;
+  }
+}
+@mixin viewL {
+  @media (min-width: 1024px) {
+    @content;
+  }
+}

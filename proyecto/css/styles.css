@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Bad+Script|Bellefair|Comfortaa|Satisfy|Slabo+27px|Vidaloka");
 
-:root {
+/* :root {
   --fondo: rgb(7, 7, 7);
   --letras: white;
-}
+} */
 
-body {
+/* body {
   background: var(--fondo);
   color: var(--letras);
 
   padding: 16px;
   text-align: justify;
-}
+} */
 
 .header {
   /* Color url_imagen repeat position / size  */
@@ -37,7 +37,7 @@ nav menu {
   justify-content: space-around;
   align-items: center;
   border: 1px white solid;
-  background: rgb(104, 102, 102);
+  background: transparent;
 }
 
 nav menu li a {
@@ -101,6 +101,12 @@ section {
 }
 
 .main_inicio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.reloj {
   display: flex;
   justify-content: center;
   align-items: center;
