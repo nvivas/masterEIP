@@ -2,13 +2,15 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+}
 
 body {
   background-color: black;
   color: white;
   padding: 16px;
-  text-align: justify; }
+  text-align: justify;
+}
 
 .respmenu a {
   color: inherit;
@@ -19,22 +21,178 @@ body {
   max-width: 200px;
   background: #234567;
   font-variant: small-caps;
-  text-shadow: 1px 1px black; }
+  text-shadow: 1px 1px black;
+}
 
 h1 {
-  /* Color url_imagen repeat position / size  */
-  background: black url(../img/juegos-de-mesa.jpg) no-repeat center/cover;
   width: 100%;
   height: 100px;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8px; }
+  margin: 8px;
+}
 
-nav {
-  position: sticky;
-  top: 0; }
+li {
+  list-style: none;
+}
+
+#tituloGatos {
+  width: 100%;
+  padding: 30px;
+  font-size: 12px;
+  color: #5f9fe1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (min-width: 768px) {
+  #tituloGatos {
+    font-size: 24px;
+  }
+}
+@media (min-width: 1024px) {
+  #tituloGatos {
+    font-size: 32px;
+  }
+}
+
+.piezasGatos {
+  background: black
+    url(../../img/La_Isla_Gatos/viewS/la_isla_de_los_gatos_detalle_piezas.jpg)
+    repeat center/cover;
+  width: 304px;
+  height: 197px;
+}
+@media (min-width: 768px) {
+  .piezasGatos {
+    background: black
+      url(../../img/La_Isla_Gatos/viewM/la_isla_de_los_gatos_detalle_piezas.jpg)
+      repeat center/cover;
+    width: 768px;
+    height: 473px;
+  }
+}
+@media (min-width: 1024px) {
+  .piezasGatos {
+    background: black
+      url(../../img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg)
+      repeat center/cover;
+    width: 1024px;
+    height: 739px;
+  }
+}
+
+.piezasPocimas {
+  background: black
+    url(../../img/Pocimas_Brebajes/viewS/pocimas_brebajes_detalle_caldero.jpg)
+    repeat center/cover;
+  width: 304px;
+  height: 197px;
+}
+@media (min-width: 768px) {
+  .piezasPocimas {
+    background: black
+      url(../../img/Pocimas_Brebajes/viewM/pocimas_brebajes_detalle_caldero.jpg)
+      repeat center/cover;
+    width: 768px;
+    height: 473px;
+  }
+}
+@media (min-width: 1024px) {
+  .piezasPocimas {
+    background: black
+      url(../../img/Pocimas_Brebajes/pocimas_brebajes_detalle_caldero.jpg)
+      repeat center/cover;
+    width: 1024px;
+    height: 739px;
+  }
+}
+
+.enlaces {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+
+.piezas {
+  padding-bottom: 16px;
+}
+
+.introduccion {
+  margin-bottom: 16px;
+  color: #5f9fe1;
+  margin-top: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .introduccion {
+    width: 768px;
+  }
+}
+@media (min-width: 1024px) {
+  .introduccion {
+    width: 1024px;
+  }
+}
+
+.zacatrus {
+  width: 304px;
+}
+
+.jugamosUna {
+  width: 304px;
+}
+
+.quintoElemento {
+  width: 304px;
+}
+
+.video {
+  width: 304px;
+  height: 170px;
+}
+@media (min-width: 768px) {
+  .video {
+    width: 480px;
+    height: 480px;
+  }
+}
+
+.explicacion {
+  font-size: 12px;
+  line-height: 16px;
+}
+@media (min-width: 768px) {
+  .explicacion {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.enlace {
+  margin-bottom: 16px;
+}
+
+.tituloIntroduccion {
+  margin-bottom: 16px;
+  text-decoration: underline;
+}
+
+.articleGatos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 16px;
+}
 
 nav menu {
   height: 50px;
@@ -43,198 +201,134 @@ nav menu {
   justify-content: space-around;
   align-items: center;
   border: 1px white solid;
-  background: transparent; }
-
+  background: transparent;
+}
 nav menu li a {
   cursor: pointer;
   text-decoration: none;
   color: red;
-  font-size: 1.05rem; }
-nav menu li a:hover,
-nav menu li .active {
-  color: white; }
+  font-size: 1.05rem;
+}
+nav menu li a:hover {
+  color: white;
+}
+nav menu li a .active {
+  color: white;
+}
 
 .pocimas a {
   cursor: pointer;
   text-decoration: none;
   color: red;
-  font-size: 1.05rem; }
+  font-size: 1.05rem;
+}
 
 aside {
   min-width: 170px;
-  margin-right: 16px; }
-
+  margin-right: 16px;
+}
 aside a {
-  color: #830c0cce; }
+  color: #830c0cce;
+}
 aside ul {
   padding-left: 0;
-  text-align: center; }
+  text-align: center;
+}
 aside li {
   list-style-type: none;
-  text-align: center; }
+  text-align: center;
+}
 
 section {
-  width: 700px; }
+  width: 100%;
+}
 
 .articulo .float .primero {
   color: yellow;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 .articulo .float .segundo {
   color: red;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 .articulo .float .tercero {
   color: purple;
-  margin-top: 20px; }
+  margin-top: 20px;
+}
 
 .left {
   float: left;
   width: 180px;
   margin: 30px 16px 16px 0;
-  box-shadow: 3px 3px 3px red; }
-  .left:hover {
-    filter: grayscale(80%); }
+  box-shadow: 3px 3px 3px red;
+}
+.left:hover {
+  filter: grayscale(80%);
+}
 
 .main_inicio {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+}
 
 address {
-  height: 100px; }
+  height: 100px;
+}
 
 .reloj {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%; }
-  .reloj #relojMovimiento {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 300px;
-    height: 50px;
-    background: black;
-    color: white;
-    font-size: 48px;
-    border: none; }
-
-* {
-  margin: 0;
-  padding: 0; }
-
-.main-header {
-  height: 50px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: white;
-  padding: 0 0.4rem; }
-
-.main-logo {
-  color: black;
-  font-size: 32px;
-  text-decoration: none; }
-
-.main-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100vh;
   width: 100%;
-  margin-left: -100%;
-  transition: all 0.2s linear;
-  background-color: rgba(0, 0, 0, 0.7);
-  z-index: 100; }
-
-.main-nav.show {
-  margin-left: 0; }
-
-.nav-links {
-  background-color: #fafafa;
-  display: flex;
-  flex-direction: column;
-  width: 70%;
   height: 100%;
-  align-items: center;
-  justify-content: flex-start; }
-
-.link-item {
-  margin-top: 2rem;
-  color: #444444;
-  text-decoration: none;
-  font-weight: bold;
-  position: relative; }
-
-.link-item::after {
-  position: absolute;
-  content: "";
-  background-color: black;
-  bottom: -5px;
-  left: 0;
-  width: 0%;
-  height: 3px;
-  transition: 0.3s ease all; }
-
-.link-item:hover::after {
-  width: 100%; }
-
-.button-menu {
-  z-index: 200;
-  width: 40px;
-  height: 40px;
-  border: none;
+}
+.reloj #relojMovimiento {
   display: flex;
-  background: none;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  cursor: pointer; }
+  width: 300px;
+  height: 50px;
+  background: black;
+  color: white;
+  font-size: 48px;
+  border: none;
+  bottom: 0;
+}
+.reloj #formReloj {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
-.button-menu span {
-  width: 37px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  background: #444444;
-  border-radius: 3px;
-  transform-origin: 4px 0px;
-  transition: all 0.2s linear; }
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999999;
+  width: 100%;
+}
 
-.button-menu.close span {
-  opacity: 1;
-  transform: rotate(45deg) translate(0px, 0px);
-  background: #ffffff; }
+@media (min-width: 1024px) {
+  .grid-contenedor {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    gap: 4px;
+    justify-content: center;
+    width: 1200px;
+  }
+}
 
-.button-menu.close span:nth-child(2) {
-  transform: rotate(-45deg) translate(-8px, 5px); }
+.item {
+  width: 304px;
+  margin-bottom: 16px;
+}
+@media (min-width: 768px) {
+  .item {
+    width: 600px;
+  }
+}
 
-.button-menu.close span:nth-child(3) {
-  display: none; }
-
-@media screen and (min-width: 768px) {
-  .button-menu {
-    display: none; }
-
-  .main-logo {
-    flex-basis: 30%; }
-
-  .main-nav {
-    position: static;
-    margin-left: 0;
-    flex-basis: 70%;
-    height: 100%; }
-
-  .nav-links {
-    width: 100%;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-end;
-    background: white; }
-
-  .link-item {
-    display: inline-block;
-    margin-top: 0;
-    margin-right: 2rem; } }
+.dflex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 /*# sourceMappingURL=styles.css.map */

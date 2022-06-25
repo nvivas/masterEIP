@@ -1,0 +1,397 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: black;
+  color: white;
+  padding: 16px;
+  text-align: justify;
+}
+
+.respmenu a {
+  color: inherit;
+  text-decoration: none;
+  display: block;
+  padding: 10px 20px;
+  border-bottom: 2px solid #456789;
+  max-width: 200px;
+  background: #234567;
+  font-variant: small-caps;
+  text-shadow: 1px 1px black;
+}
+
+h1 {
+  width: 100%;
+  height: 100px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin: 8px;
+}
+
+li {
+  list-style: none;
+}
+
+#tituloGatos {
+  width: 100%;
+  padding: 30px;
+  font-size: 12px;
+  color: #5f9fe1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media (min-width: 768px) {
+  #tituloGatos {
+    font-size: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  #tituloGatos {
+    font-size: 32px;
+  }
+}
+
+.piezasGatos {
+  background: black
+    url(../../img/La_Isla_Gatos/viewS/la_isla_de_los_gatos_detalle_piezas.jpg)
+    repeat center/cover;
+  width: 304px;
+  height: 197px;
+}
+
+@media (min-width: 768px) {
+  .piezasGatos {
+    background: black
+      url(../../img/La_Isla_Gatos/viewM/la_isla_de_los_gatos_detalle_piezas.jpg)
+      repeat center/cover;
+    width: 768px;
+    height: 473px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .piezasGatos {
+    background: black
+      url(../../img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg)
+      repeat center/cover;
+    width: 1024px;
+    height: 739px;
+  }
+}
+
+.enlaces {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.piezas {
+  padding-bottom: 16px;
+}
+
+.introduccion {
+  margin-bottom: 16px;
+  color: #5f9fe1;
+  margin-top: 16px;
+  line-height: 16px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+@media (min-width: 768px) {
+  .introduccion {
+    width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .introduccion {
+    width: 1024px;
+  }
+}
+
+.zacatrus {
+  width: 304px;
+}
+
+.jugamosUna {
+  width: 304px;
+}
+
+.video {
+  width: 304px;
+  height: 170px;
+}
+
+@media (min-width: 768px) {
+  .video {
+    width: 480px;
+    height: 480px;
+  }
+}
+
+.explicacion {
+  font-size: 12px;
+  line-height: 16px;
+}
+
+@media (min-width: 768px) {
+  .explicacion {
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+.enlace {
+  margin-bottom: 16px;
+}
+
+.tituloIntroduccion {
+  margin-bottom: 16px;
+  text-decoration: underline;
+}
+
+.articleGatos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding: 16px;
+}
+
+nav menu {
+  height: 50px;
+  list-style-type: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px white solid;
+  background: transparent;
+}
+
+nav menu li a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+  font-size: 1.05rem;
+}
+
+nav menu li a:hover {
+  color: white;
+}
+
+nav menu li a .active {
+  color: white;
+}
+
+.pocimas a {
+  cursor: pointer;
+  text-decoration: none;
+  color: red;
+  font-size: 1.05rem;
+}
+
+aside {
+  min-width: 170px;
+  margin-right: 16px;
+}
+
+aside a {
+  color: #830c0cce;
+}
+
+aside ul {
+  padding-left: 0;
+  text-align: center;
+}
+
+aside li {
+  list-style-type: none;
+  text-align: center;
+}
+
+section {
+  width: 100%;
+}
+
+.articulo .float .primero {
+  color: yellow;
+  margin-top: 20px;
+}
+
+.articulo .float .segundo {
+  color: red;
+  margin-top: 20px;
+}
+
+.articulo .float .tercero {
+  color: purple;
+  margin-top: 20px;
+}
+
+.left {
+  float: left;
+  width: 180px;
+  margin: 30px 16px 16px 0;
+  -webkit-box-shadow: 3px 3px 3px red;
+  box-shadow: 3px 3px 3px red;
+}
+
+.left:hover {
+  -webkit-filter: grayscale(80%);
+  filter: grayscale(80%);
+}
+
+.main_inicio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+address {
+  height: 100px;
+}
+
+.reloj {
+  width: 100%;
+  height: 100%;
+}
+
+.reloj #relojMovimiento {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  background: black;
+  color: white;
+  font-size: 48px;
+  border: none;
+  bottom: 0;
+}
+
+.reloj #formReloj {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 999999;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .grid-contenedor {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 2fr 2fr;
+    grid-template-columns: 2fr 2fr;
+    gap: 4px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    width: 1200px;
+  }
+}
+
+.item {
+  width: 304px;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .item {
+    width: 600px;
+  }
+}
+
+.dflex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+/*# sourceMappingURL=styles.css.map */

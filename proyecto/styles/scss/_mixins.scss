@@ -11,6 +11,11 @@
   height: $alto;
 }
 
+@mixin dimensionesMax($ancho) {
+  max-width: $ancho;
+  height: auto;
+}
+
 @mixin reset {
   padding: 0;
   margin: 0;
@@ -25,7 +30,7 @@
   }
 }
 @mixin viewM {
-  @media (min-width: 768) {
+  @media (min-width: 768px) {
     @content;
   }
 }

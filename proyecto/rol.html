@@ -8,31 +8,30 @@
     <title>Juegos de mesa</title>
     <meta name="author" content="Ignacio Vivas Martín" />
     <meta name="description" content="Juegos de mesa favoritos">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="scss/_juegos.scss">
+    <!-- link css y js -->
+    <link rel="stylesheet" href="./styles/css/styles.css">
+    <script src="js/index.js"></script>
+    <!-- link jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- librería anime  -->
+    <script src="anime.min.js"></script>
+
 </head>
 
-<body>
+<body onload="mueveReloj()">
     <header class="header">
-        <h1>Juegos de mesa</h1>
+        <h1 class="juegosTitulo">El señor de los Anillos</h1>
     </header>
+    <div id="navegador"></div>
     <nav>
         <menu>
-            <li><a href="index.html">Inicio</a></li>
+            <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="juegosMesa.html">Juegos de mesa</a></li>
-            <li><a href="rol.html" class="active">Rol ESDLA</a></li>
-            <li><a href="castillos.html">Contacto</a></li>
-
+            <li><a href="rol.html">Rol ESDLA</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </menu>
     </nav>
-    <nav>
-        <menu>
-            <li><a href="#" class="active">Aventura</a></li>
-            <li><a href="#">Personajes principales</a></li>
-            <li><a href="#">Enemigos</a></li>
 
-        </menu>
-    </nav>
     <main class="main_inicio">
         <section>
             <article class="articulo">
@@ -40,7 +39,7 @@
                     <picture>
                         <img class="left" src="./img/juegos-de-mesa.jpg" alt="juegos">
                     </picture>
-                    <p>
+                    <p class="primero">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem distinctio quaerat
                         adipisci
                         labore perferendis in repellat tempore eius culpa? Omnis incidunt ab illum ratione fuga est
@@ -57,7 +56,7 @@
                     <picture>
                         <img class="left" src="./img/pocimas_brebajes.jpg" alt="juegos">
                     </picture>
-                    <p>
+                    <p class="segundo">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem distinctio quaerat
                         adipisci
                         labore perferendis in repellat tempore eius culpa? Omnis incidunt ab illum ratione fuga est
@@ -74,7 +73,7 @@
                     <picture>
                         <img class="left" src="./img/juegos-de-mesa.jpg" alt="juegos">
                     </picture>
-                    <p>
+                    <p class="tercero">
                         Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem distinctio quaerat
                         adipisci
                         labore perferendis in repellat tempore eius culpa? Omnis incidunt ab illum ratione fuga est
@@ -93,17 +92,17 @@
         </section>
         <div class="hola"></div>
     </main>
+    <script src="js/script.js" charset="utf-8"></script>
 </body>
 
 <footer>
     <address>
-        <script>
-            let cadenaDiv = "<div>";
-            var time = new Date();
-            cadenaDiv += document.write(time.getHours() + ":" + time.getMinutes() + ":" + time.getSeconds());
-            cadenaDiv += "</div>";
-
-        </script>
+        <div class='reloj'>
+            <form name="form_reloj" id="formReloj">
+                <input type="text" name="reloj" size="10" id="relojMovimiento">
+                <p>Hecho por Ignacio Vivas Martín &copy;</p>
+            </form>
+        </div>
     </address>
 </footer>
 

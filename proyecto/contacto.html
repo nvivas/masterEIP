@@ -8,22 +8,24 @@
     <title>Juegos de mesa</title>
     <meta name="author" content="Ignacio Vivas Martín" />
     <meta name="description" content="Juegos de mesa favoritos">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="scss/_juegos.scss">
-    <script src="js/contacto.js"></script>
+    <!-- link css y js -->
+    <link rel="stylesheet" href="./styles/css/styles.css">
+    <script src="js/index.js"></script>
+    <!-- link jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 
-<body>
+<body onload="mueveReloj()">
     <header class="header">
-        <h1>Juegos de mesa</h1>
+        <h1 class="juegosTitulo">Juegos de mesa</h1>
     </header>
-    <nav>
+    <div id="navegador"></div>
+    <nav class="arriba">
         <menu>
             <li><a href="index.html" class="active">Inicio</a></li>
             <li><a href="juegosMesa.html">Juegos de mesa</a></li>
-            <li><a href="gatos.html">Rol ESDLA</a></li>
+            <li><a href="rol.html">Rol ESDLA</a></li>
             <li><a href="contacto.html">Contacto</a></li>
-
         </menu>
     </nav>
     <main class="main_inicio">
@@ -34,6 +36,18 @@
             <button>Cancelar</button>
         </form>
     </main>
+    <script src="js/script.js" charset="utf-8"></script>
 </body>
+
+<footer>
+    <address>
+        <div class='reloj'>
+            <form name="form_reloj" id="formReloj">
+                <input type="text" name="reloj" size="10" id="relojMovimiento">
+                <p>Hecho por Ignacio Vivas Martín &copy;</p>
+            </form>
+        </div>
+    </address>
+</footer>
 
 </html>
