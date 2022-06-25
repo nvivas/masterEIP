@@ -73,6 +73,25 @@ li {
   }
 }
 
+.piezasPocimas {
+  background: $negro
+    url(../../img/Pocimas_Brebajes/viewS/pocimas_brebajes_detalle_caldero.jpg)
+    repeat center / cover;
+  @include dimensiones(304px, 197px);
+  @include viewM {
+    background: $negro
+      url(../../img/Pocimas_Brebajes/viewM/pocimas_brebajes_detalle_caldero.jpg)
+      repeat center / cover;
+    @include dimensiones(768px, 473px);
+  }
+  @include viewL {
+    background: $negro
+      url(../../img/Pocimas_Brebajes/pocimas_brebajes_detalle_caldero.jpg)
+      repeat center / cover;
+    @include dimensiones(1024px, 739px);
+  }
+}
+
 .enlaces {
   display: flex;
   justify-content: space-around;
@@ -105,6 +124,10 @@ li {
 }
 
 .jugamosUna {
+  width: 304px;
+}
+
+.quintoElemento {
   width: 304px;
 }
 
@@ -281,4 +304,3 @@ footer {
 .dflex {
   @include display;
 }
-

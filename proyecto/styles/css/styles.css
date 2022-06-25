@@ -63,6 +63,21 @@ li {
       width: 1024px;
       height: 739px; } }
 
+.piezasPocimas {
+  background: black url(../../img/Pocimas_Brebajes/viewS/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
+  width: 304px;
+  height: 197px; }
+  @media (min-width: 768px) {
+    .piezasPocimas {
+      background: black url(../../img/Pocimas_Brebajes/viewM/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
+      width: 768px;
+      height: 473px; } }
+  @media (min-width: 1024px) {
+    .piezasPocimas {
+      background: black url(../../img/Pocimas_Brebajes/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
+      width: 1024px;
+      height: 739px; } }
+
 .enlaces {
   display: flex;
   justify-content: space-around;
@@ -93,6 +108,9 @@ li {
   width: 304px; }
 
 .jugamosUna {
+  width: 304px; }
+
+.quintoElemento {
   width: 304px; }
 
 .video {
