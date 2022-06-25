@@ -8,37 +8,19 @@
     <title>Juegos de mesa</title>
     <meta name="author" content="Ignacio Vivas Martín" />
     <meta name="description" content="Juegos de mesa favoritos">
+
+    <link href="css/hamburgers.css" rel="stylesheet">
+
     <!-- link css y js -->
     <link rel="stylesheet" href="./styles/css/styles.css">
     <script src="js/index.js"></script>
     <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- librería anime  -->
-    <script src="anime.min.js"></script>
-
 </head>
 
 <body onload="mueveReloj()">
     <header class="header">
         <h1 class="juegosTitulo">Juegos de mesa</h1>
-    </header>
-    <header class="main-header">
-        <a class="main-logo" href="https://progradudi.netlify.app">
-            <strong>Progra_dudi</strong>
-        </a>
-        <nav id="nav" class="main-nav">
-            <div class="nav-links">
-                <a class="link-item" href="#">Link1</a>
-                <a class="link-item" href="#">Link2</a>
-                <a class="link-item" href="#">Link3</a>
-                <a class="link-item" href="#">Link4</a>
-            </div>
-        </nav>
-        <button id="button-menu" class="button-menu">
-            <span></span>
-            <span></span>
-            <span></span>
-        </button>
     </header>
     <div id="navegador"></div>
     <nav class="arriba">
@@ -49,7 +31,6 @@
             <li><a href="contacto.html">Contacto</a></li>
         </menu>
     </nav>
-
     <main class="main_inicio">
         <section>
             <article class="articulo">
@@ -116,7 +97,7 @@
 <footer>
     <address>
         <div class='reloj'>
-            <form name="form_reloj">
+            <form name="form_reloj" id="formReloj">
                 <input type="text" name="reloj" size="10" id="relojMovimiento">
                 <p>Hecho por Ignacio Vivas Martín &copy;</p>
             </form>

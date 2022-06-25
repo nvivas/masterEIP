@@ -12,77 +12,115 @@
     <link rel="stylesheet" href="./styles/css/styles.css">
     <script src="js/index.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/cambiarPestanna.js"></script>
 </head>
 
-<body onload="javascript:cambiarPestanna(pestanas,pestana1);">
+<body>
     <header class="header">
         <h1>Juegos de mesa</h1>
     </header>
     <nav>
         <menu>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="juegosMesa.html" class="active">Juegos de mesa</a></li>
-            <li><a href="gatos.html">Rol ESDLA</a></li>
-            <li><a href="castillos.html">Contacto</a></li>
+            <li><a href="index.html" class="active">Inicio</a></li>
+            <li><a href="juegosMesa.html">Juegos de mesa</a></li>
+            <li><a href="rol.html">Rol ESDLA</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
         </menu>
     </nav>
     <nav>
         <menu>
-            <li><a href="#" class="active">Isla de los gatos</a></li>
+            <li><a href="juegosMesa.html" class="active">Isla de los gatos</a></li>
             <li><a href="pocimas.html">Pócimas y brebajes</a></li>
-            <li><a href="#">Castillos de Borgoña</a></li>
-
+            <li><a href="castillos.html">Castillos de Borgoña</a></li>
         </menu>
     </nav>
     <main class="main_juegos">
         <section class="isla_gatos">
-            <article>
-                <h2>Isla de los gatos</h2>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, molestias?</p>
-                <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-                <div class="contenedor">
-                    <div id="pestanas">
-                        <ul id=lista>
-                            <li id="pestana1"><a href='javascript:cambiarPestanna(pestanas,pestana1);'>Descripción</a>
-                            </li>
-                            <li id="pestana2"><a href='javascript:cambiarPestanna(pestanas,pestana2);'>Detalles</a></li>
-                            <li id="pestana3"><a href='javascript:cambiarPestanna(pestanas,pestana3);'>Dónde Comprar</a>
-                            </li>
-                        </ul>
+            <article class="articleGatos">
+                <h2 id="tituloGatos">Reseña de La Isla de los gatos</h2>
+                <picture class="piezas">
+                    <div class="piezasGatos"></div>
+                    <!-- <img src="img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg" alt="piezas gatos" /> -->
+                </picture>
+                <div class="introduccion">
+                    <h2 class="tituloIntroduccion">INTRODUCCIÓN</h2>
+                    <p class="explicacion">Las leyendas de la ciudad siempre hablaron de una fabulosa isla poblada por
+                        una raza de sabios,
+                        fieros y juguetones gatos. ¡Recientemente, unos exploradores de Punta de Tempestad han revelado
+                        que
+                        esto es real! Pero
+                        estos gatos se encuentran amenazados por la proximidad de los ejércitos de Vesh Manoscura, quien
+                        no
+                        se detendrá
+                        hasta destruir la isla y el resto del mundo. Los árboles arderán y las viejas piedras se
+                        romperán,
+                        ¡pero aún hay una
+                        oportunidad para salvar a estas nobles criaturas!</p>
+                </div>
+            </article>
+
+            <article class="dflex">
+                <div class="grid-contenedor">
+                    <div class="grid">
+                        <img src="./img/La_Isla_Gatos/la_isla_de_los_gatos_tablero_isla_600.jpg" alt="cestas"
+                            class="item">
                     </div>
-                    <div id="contenidopestanas">
-                        <div id="cpestana1">
-                            HTML, siglas de HyperText Markup Language («lenguaje de marcado de hipertexto»), hace
-                            referencia al
-                            lenguaje de marcado predominante para la elaboración de páginas web que se utiliza para
-                            describir y
-                            traducir la estructura y la información en forma de texto, así como para complementar el
-                            texto con
-                            objetos tales como imágenes. El HTML se escribe en forma de «etiquetas», rodeadas por
-                            corchetes
-                            angulares (<,>). HTML también puede describir, hasta un cierto punto, la apariencia de un
-                                documento, y
-                                puede incluir un script (por ejemplo JavaScript), el cual puede afectar el
-                                comportamiento de
-                                navegadores web y otros procesadores de HTML.
-                        </div>
-                        <div id="cpestana2">
-                            El nombre hojas de estilo en cascada viene del inglés Cascading Style Sheets, del que toma
-                            sus siglas.
-                            CSS es un lenguaje usado para definir la presentación de un documento estructurado escrito
-                            en HTML o
-                            XML2 (y por extensión en XHTML). El W3C (World Wide Web Consortium) es el encargado de
-                            formular la
-                            especificación de las hojas de estilo que servirán de estándar para los agentes de usuario o
-                            navegadores.
-                        </div>
-                        <div id="cpestana3">
-                            JavaScript es un lenguaje de programación interpretado, dialecto del estándar ECMAScript. Se
-                            define como
-                            orientado a objetos,3 basado en prototipos, imperativo, débilmente tipado y dinámico.
-                        </div>
+                    <div class="grid">
+                        <img src="./img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_mano_600.png" alt="cartas"
+                            class="item">
                     </div>
+                    <div class="grid">
+                        <img src="./img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_tablero_600.png"
+                            alt="detalle tablero" class="item">
+                    </div>
+                    <div class="grid">
+                        <img src="./img/La_Isla_Gatos/la_isla_de_los_gatos_contenido_600.png" alt="contenido"
+                            class="item">
+                    </div>
+                </div>
+            </article>
+
+            <article class="articleGatos">
+                <div class="introduccion">
+                    <h2 class="tituloIntroduccion">DETALLE</h2>
+                    <p class="explicacion">En nuestro país se encuentra publicado en una versión en español por
+                        <strong>Maldito Games</strong> (la dependencia del idioma es
+                        relevante en varios tipos de cartas, además del reglamento). Permite partidas de <strong>1 a 4
+                            jugadores,</strong> con una edad mínima
+                        sugerida de <strong>8 años</strong> y una duración aproximada de <strong>entre 60 y 90
+                            minutos.</strong> El precio de venta al
+                        público es de 50€. Para
+                        esta reseña se ha utilizado una copia de la versión en español de Maldito Games que la propia
+                        editorial nos ha cedido
+                        amablemente.
+                    </p>
+                </div>
+            </article>
+
+            <article class="articleGatos">
+                <div class="introduccion">
+                    <h2 class="tituloIntroduccion">Enlaces a páginas para comprar</h2>
+                    <div class="enlaces">
+                        <li>
+                            <a href="https://zacatrus.es/la-isla-de-los-gatos.html" class="introduccion enlace"
+                                target="_blank">
+                                <img src="img/La_Isla_Gatos/logo_zacatrus.png" alt="zacatrus" class="zacatrus">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://jugamosuna.es/tienda/7951/comprar-la-isla-de-los-gatos-barato.html"
+                                class="introduccion enlace" target="_blank"><img
+                                    src="img/La_Isla_Gatos/jugamos-una-logo.jpg" alt="jugamosUna" class="jugamosUna">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </article>
+
+            <article class="articleGatos">
+                <div class="introduccion">
+                    <h2 class="tituloIntroduccion">Video explicativo</h2>
+                    <video src="video/Conociendo La Isla de los Gatos.mp4" poster="img/La_Isla_Gatos/FT_IslaGatos.jpg"
+                        controls class="video"></video>
                 </div>
             </article>
         </section>
