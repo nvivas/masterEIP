@@ -29,6 +29,11 @@
     @content;
   }
 }
+@mixin viewSmax {
+  @media (max-width: 767px) {
+    @content;
+  }
+}
 @mixin viewM {
   @media (min-width: 768px) {
     @content;

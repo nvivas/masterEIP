@@ -1,0 +1,310 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+.contenedor {
+  max-width: 800px;
+  height: 100vh;
+  margin: 20px auto;
+  border: 1px solid black;
+  /* Pone el scroll en la derecha */
+  overflow: scroll;
+}
+
+.index-header {
+  width: 100%;
+  background: black;
+  color: white;
+  font-size: 8px;
+  padding: 8px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.camara {
+  font-size: 12px;
+  margin-right: 8px;
+}
+
+.album article h2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-top: 50px;
+}
+
+.album article p {
+  font-size: 12px;
+  color: #a3a3a3;
+  margin: 12px;
+}
+
+.album {
+  width: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0 auto;
+}
+
+.botones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+button {
+  width: 150px;
+  padding: 8px;
+  color: white;
+}
+
+.contacto {
+  margin-right: 16px;
+  background-color: #0059fd;
+}
+
+.contacto:hover {
+  background-color: #528efd;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.secondary {
+  background-color: grey;
+}
+
+.view, .edit {
+  background: transparent;
+  width: 50px;
+  color: black;
+  margin-right: 8px;
+}
+
+.boton-section {
+  margin-top: 8px;
+  width: 250px;
+  font-size: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.boton-section button {
+  width: 50px;
+  font-size: 12px;
+  padding: 4px;
+  margin-bottom: 16px;
+}
+
+img {
+  width: 250px;
+  height: 200px;
+}
+
+.card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: auto;
+  margin-right: 70px;
+}
+
+.card article {
+  width: 290px;
+  height: 300px;
+  margin-left: 64px;
+  color: black;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 12px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1px solid black;
+  -webkit-box-shadow: 5px 5px 8px #866b1f;
+          box-shadow: 5px 5px 8px #866b1f;
+}
+
+.card article picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+.card article p {
+  width: 200px;
+}
+
+footer {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 100%;
+  background: black;
+  border: 1px solid black;
+  height: 80px;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 32px;
+}
+
+.form-body {
+  background: #fac37a;
+  font-family: sans-serif;
+}
+
+.form-main {
+  background: #fae3b9;
+  width: 400px;
+  margin: auto;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.formulario {
+  margin: 32px;
+}
+
+.form-title {
+  color: orange;
+  text-align: center;
+  padding-top: 24px;
+  font-size: 30px;
+}
+
+h6 {
+  margin-top: 32px;
+  font-weight: 700;
+  color: #646363;
+}
+
+input, textarea {
+  border-radius: 5px;
+  -webkit-box-shadow: 5px 5px 8px #866b1f;
+          box-shadow: 5px 5px 8px #866b1f;
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 8px;
+  border: none;
+  outline: none;
+  color: #a37f4f;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="text"], textarea[type="text"] {
+  margin-bottom: 16px;
+}
+
+label {
+  color: #866b1f;
+  font-size: 12px;
+}
+
+::-webkit-input-placeholder {
+  color: #dadada;
+}
+
+:-ms-input-placeholder {
+  color: #dadada;
+}
+
+::-ms-input-placeholder {
+  color: #dadada;
+}
+
+::placeholder {
+  color: #dadada;
+}
+
+input[type="submit"], textarea[type="submit"] {
+  background: #fac37a;
+  color: #866b1f;
+}
+
+input:focus, textarea:focus {
+  border: 2px solid #fac37a;
+}
+
+textarea:focus {
+  border: 2px solid #fac37a;
+}
+/*# sourceMappingURL=styles.css.map */

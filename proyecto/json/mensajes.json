@@ -1,0 +1,15 @@
+{
+  "es": {
+    "juegos": "Juegos de Mesa",
+    "inicio": "Inicio",
+    "rol": "Rol",
+    "contacto": "Contacto"
+  },
+
+  "en": {
+    "juegos": "Games",
+    "inicio": "Home",
+    "rol": "Rol",
+    "contacto": "Contact"
+  }
+}

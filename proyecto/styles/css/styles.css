@@ -2,27 +2,19 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: sans-serif;
-}
+  font-family: sans-serif; }
+
+html {
+  min-height: 100%;
+  position: relative; }
 
 body {
   background-color: black;
   color: white;
   padding: 16px;
   text-align: justify;
-}
-
-.respmenu a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  padding: 10px 20px;
-  border-bottom: 2px solid #456789;
-  max-width: 200px;
-  background: #234567;
-  font-variant: small-caps;
-  text-shadow: 1px 1px black;
-}
+  margin: 0;
+  margin-bottom: 40px; }
 
 h1 {
   width: 100%;
@@ -31,12 +23,10 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8px;
-}
+  margin: 8px; }
 
 li {
-  list-style: none;
-}
+  list-style: none; }
 
 #tituloGatos {
   width: 100%;
@@ -45,81 +35,52 @@ li {
   color: #5f9fe1;
   display: flex;
   align-items: center;
-  justify-content: center;
-}
-@media (min-width: 768px) {
-  #tituloGatos {
-    font-size: 24px;
-  }
-}
-@media (min-width: 1024px) {
-  #tituloGatos {
-    font-size: 32px;
-  }
-}
+  justify-content: center; }
+  @media (min-width: 768px) {
+    #tituloGatos {
+      font-size: 24px; } }
+  @media (min-width: 1024px) {
+    #tituloGatos {
+      font-size: 32px; } }
 
 .piezasGatos {
-  background: black
-    url(../../img/La_Isla_Gatos/viewS/la_isla_de_los_gatos_detalle_piezas.jpg)
-    repeat center/cover;
+  background: black url(../../img/La_Isla_Gatos/viewS/la_isla_de_los_gatos_detalle_piezas.jpg) repeat center/cover;
   width: 304px;
-  height: 197px;
-}
-@media (min-width: 768px) {
-  .piezasGatos {
-    background: black
-      url(../../img/La_Isla_Gatos/viewM/la_isla_de_los_gatos_detalle_piezas.jpg)
-      repeat center/cover;
-    width: 768px;
-    height: 473px;
-  }
-}
-@media (min-width: 1024px) {
-  .piezasGatos {
-    background: black
-      url(../../img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg)
-      repeat center/cover;
-    width: 1024px;
-    height: 739px;
-  }
-}
+  height: 197px; }
+  @media (min-width: 768px) {
+    .piezasGatos {
+      background: black url(../../img/La_Isla_Gatos/viewM/la_isla_de_los_gatos_detalle_piezas.jpg) repeat center/cover;
+      width: 768px;
+      height: 473px; } }
+  @media (min-width: 1024px) {
+    .piezasGatos {
+      background: black url(../../img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg) repeat center/cover;
+      width: 1024px;
+      height: 739px; } }
 
 .piezasPocimas {
-  background: black
-    url(../../img/Pocimas_Brebajes/viewS/pocimas_brebajes_detalle_caldero.jpg)
-    repeat center/cover;
+  background: black url(../../img/Pocimas_Brebajes/viewS/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
   width: 304px;
-  height: 197px;
-}
-@media (min-width: 768px) {
-  .piezasPocimas {
-    background: black
-      url(../../img/Pocimas_Brebajes/viewM/pocimas_brebajes_detalle_caldero.jpg)
-      repeat center/cover;
-    width: 768px;
-    height: 473px;
-  }
-}
-@media (min-width: 1024px) {
-  .piezasPocimas {
-    background: black
-      url(../../img/Pocimas_Brebajes/pocimas_brebajes_detalle_caldero.jpg)
-      repeat center/cover;
-    width: 1024px;
-    height: 739px;
-  }
-}
+  height: 197px; }
+  @media (min-width: 768px) {
+    .piezasPocimas {
+      background: black url(../../img/Pocimas_Brebajes/viewM/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
+      width: 768px;
+      height: 473px; } }
+  @media (min-width: 1024px) {
+    .piezasPocimas {
+      background: black url(../../img/Pocimas_Brebajes/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
+      width: 1024px;
+      height: 739px; } }
 
 .enlaces {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  flex-direction: column;
-}
+  flex-direction: column; }
 
 .piezas {
-  padding-bottom: 16px;
-}
+  padding-bottom: 16px; }
 
 .introduccion {
   margin-bottom: 16px;
@@ -130,180 +91,158 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
-}
-@media (min-width: 768px) {
-  .introduccion {
-    width: 768px;
-  }
-}
-@media (min-width: 1024px) {
-  .introduccion {
-    width: 1024px;
-  }
-}
+  flex-direction: column; }
+  @media (min-width: 768px) {
+    .introduccion {
+      width: 768px; } }
+  @media (min-width: 1024px) {
+    .introduccion {
+      width: 1024px; } }
 
 .zacatrus {
-  width: 304px;
-}
+  width: 304px; }
 
 .jugamosUna {
-  width: 304px;
-}
+  width: 304px; }
 
 .quintoElemento {
-  width: 304px;
-}
+  width: 304px; }
 
 .video {
   width: 304px;
-  height: 170px;
-}
-@media (min-width: 768px) {
-  .video {
-    width: 480px;
-    height: 480px;
-  }
-}
+  height: 170px; }
+  @media (min-width: 768px) {
+    .video {
+      width: 480px;
+      height: 480px; } }
 
 .explicacion {
   font-size: 12px;
-  line-height: 16px;
-}
-@media (min-width: 768px) {
-  .explicacion {
-    font-size: 16px;
-    line-height: 20px;
-  }
-}
+  line-height: 16px; }
+  @media (min-width: 768px) {
+    .explicacion {
+      font-size: 16px;
+      line-height: 20px; } }
 
 .enlace {
-  margin-bottom: 16px;
-}
+  margin-bottom: 16px; }
 
 .tituloIntroduccion {
   margin-bottom: 16px;
-  text-decoration: underline;
-}
+  text-decoration: underline; }
 
 .articleGatos {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  padding: 16px;
-}
+  padding: 16px; }
 
-nav menu {
-  height: 50px;
-  list-style-type: none;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  border: 1px white solid;
-  background: transparent;
-}
-nav menu li a {
-  cursor: pointer;
-  text-decoration: none;
-  color: red;
-  font-size: 1.05rem;
-}
-nav menu li a:hover {
-  color: white;
-}
-nav menu li a .active {
-  color: white;
-}
+.arriba menu {
+  border: none; }
+  @media (min-width: 768px) {
+    .arriba menu {
+      height: 50px;
+      list-style-type: none;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      border: 1px white solid;
+      background: transparent; }
+      .arriba menu li a {
+        cursor: pointer;
+        text-decoration: none;
+        color: red;
+        font-size: 1.05rem; }
+        .arriba menu li a:hover {
+          color: white; }
+        .arriba menu li a .active {
+          color: white; } }
 
 .pocimas a {
   cursor: pointer;
   text-decoration: none;
   color: red;
-  font-size: 1.05rem;
-}
+  font-size: 1.05rem; }
 
 aside {
   min-width: 170px;
-  margin-right: 16px;
-}
-aside a {
-  color: #830c0cce;
-}
-aside ul {
-  padding-left: 0;
-  text-align: center;
-}
-aside li {
-  list-style-type: none;
-  text-align: center;
-}
+  margin-right: 16px; }
+  aside a {
+    color: #830c0cce; }
+  aside ul {
+    padding-left: 0;
+    text-align: center; }
+  aside li {
+    list-style-type: none;
+    text-align: center; }
 
-section {
-  width: 100%;
-}
+.main-section {
+  width: 100%; }
+  @media (min-width: 1024px) {
+    .main-section {
+      width: 700px; } }
 
 .articulo .float .primero {
   color: yellow;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 .articulo .float .segundo {
   color: red;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 .articulo .float .tercero {
   color: purple;
-  margin-top: 20px;
-}
+  margin-top: 20px; }
 
 .left {
   float: left;
   width: 180px;
   margin: 30px 16px 16px 0;
-  box-shadow: 3px 3px 3px red;
-}
-.left:hover {
-  filter: grayscale(80%);
-}
+  box-shadow: 3px 3px 3px red; }
+  .left:hover {
+    filter: grayscale(80%); }
 
 .main_inicio {
   display: flex;
   align-items: center;
   justify-content: center;
-}
+  margin-top: 50px; }
 
 address {
-  height: 100px;
-}
+  height: 100px; }
 
 .reloj {
   width: 100%;
-  height: 100%;
-}
-.reloj #relojMovimiento {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 300px;
-  height: 50px;
-  background: black;
-  color: white;
-  font-size: 48px;
-  border: none;
-  bottom: 0;
-}
-.reloj #formReloj {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
+  height: 100%; }
+  @media (min-width: 768px) {
+    .reloj {
+      display: flex;
+      align-items: center;
+      justify-content: center; } }
+  .reloj #relojMovimiento {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: black;
+    color: white;
+    font-size: 24px;
+    border: none;
+    margin-bottom: 16px; }
+    @media (min-width: 768px) {
+      .reloj #relojMovimiento {
+        font-size: 48px;
+        margin-bottom: 0; } }
+  .reloj #formReloj {
+    display: flex;
+    align-items: center;
+    justify-content: center; }
 
 footer {
-  position: fixed;
+  background-color: black;
+  position: absolute;
   bottom: 0;
-  z-index: 999999;
   width: 100%;
-}
+  height: 40px;
+  color: white; }
 
 @media (min-width: 1024px) {
   .grid-contenedor {
@@ -311,24 +250,137 @@ footer {
     grid-template-columns: 2fr 2fr;
     gap: 4px;
     justify-content: center;
-    width: 1200px;
-  }
-}
+    width: 1200px; } }
 
 .item {
   width: 304px;
-  margin-bottom: 16px;
-}
-@media (min-width: 768px) {
-  .item {
-    width: 600px;
-  }
-}
+  margin-bottom: 16px; }
+  @media (min-width: 768px) {
+    .item {
+      width: 600px; } }
 
 .dflex {
   display: flex;
   align-items: center;
+  justify-content: center; }
+
+@media (min-width: 768px) {
+  .navbar {
+    display: none; } }
+@media (max-width: 767px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; }
+
+  body {
+    font-family: "Poppins", sans-serif; }
+
+  .arriba {
+    display: none; }
+
+  .container {
+    max-width: 1050px;
+    width: 90%;
+    margin: auto; }
+
+  .navbar {
+    width: 100%;
+    background: black; }
+    .navbar .menu-items {
+      padding-top: 120px;
+      width: 100%;
+      height: 100vh;
+      transform: translate(-150%);
+      display: flex;
+      flex-direction: column;
+      margin-left: -40px;
+      padding-left: 50px;
+      transition: transform 0.5s ease-in-out;
+      text-align: center;
+      background: #262525;
+      margin-top: 600px; }
+      .navbar .menu-items li {
+        margin-bottom: 1.2rem;
+        font-size: 1.5rem;
+        font-weight: 500; }
+    .navbar .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 62px; }
+      .navbar .nav-container li {
+        list-style: none; }
+      .navbar .nav-container input[type="checkbox"]:checked ~ .menu-items {
+        transform: translateX(0); }
+      .navbar .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
+        transform: rotate(45deg); }
+      .navbar .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
+        transform: scaleY(0); }
+      .navbar .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
+        transform: rotate(-45deg); }
+      .navbar .nav-container a {
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 1.2rem;
+        padding: 0.7rem; }
+        .navbar .nav-container a:hover {
+          font-weight: bolder; }
+
+  .nav-container {
+    display: block;
+    position: relative;
+    height: 60px; }
+    .nav-container .checkbox {
+      position: absolute;
+      display: block;
+      width: 32px;
+      height: 32px;
+      top: 20px;
+      right: 0;
+      z-index: 5;
+      opacity: 0;
+      cursor: pointer; }
+    .nav-container .hamburger-lines {
+      display: block;
+      width: 32px;
+      height: 26px;
+      position: absolute;
+      top: 17px;
+      right: 0;
+      z-index: 2;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+      .nav-container .hamburger-lines .line {
+        display: block;
+        width: 100%;
+        height: 4px;
+        border-radius: 10px;
+        background: white; }
+      .nav-container .hamburger-lines .line1 {
+        transform-origin: 0% 0%;
+        transition: transform 0.4s ease-in-out; }
+      .nav-container .hamburger-lines .line2 {
+        transition: transform 0.2s ease-in-out; }
+      .nav-container .hamburger-lines .line3 {
+        transform-origin: 0% 100%;
+        transition: transform 0.4s ease-in-out; } }
+.formulario {
+  width: 100%;
+  display: flex;
+  align-items: center;
   justify-content: center;
-}
+  flex-direction: column; }
+
+.tituloFormulario {
+  padding: 16px;
+  font-size: 40px; }
+
+.formulario-contenedor {
+  width: 75%;
+  height: 600px;
+  border: 1px white solid; }
 
 /*# sourceMappingURL=styles.css.map */

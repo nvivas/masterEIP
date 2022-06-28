@@ -2,8 +2,13 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
+          box-sizing: border-box;
   font-family: sans-serif;
+}
+
+html {
+  min-height: 100%;
+  position: relative;
 }
 
 body {
@@ -11,18 +16,8 @@ body {
   color: white;
   padding: 16px;
   text-align: justify;
-}
-
-.respmenu a {
-  color: inherit;
-  text-decoration: none;
-  display: block;
-  padding: 10px 20px;
-  border-bottom: 2px solid #456789;
-  max-width: 200px;
-  background: #234567;
-  font-variant: small-caps;
-  text-shadow: 1px 1px black;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 h1 {
@@ -33,11 +28,11 @@ h1 {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin: 8px;
 }
 
@@ -54,11 +49,11 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (min-width: 768px) {
@@ -74,18 +69,14 @@ li {
 }
 
 .piezasGatos {
-  background: black
-    url(../../img/La_Isla_Gatos/viewS/la_isla_de_los_gatos_detalle_piezas.jpg)
-    repeat center/cover;
+  background: black url(../../img/La_Isla_Gatos/viewS/la_isla_de_los_gatos_detalle_piezas.jpg) repeat center/cover;
   width: 304px;
   height: 197px;
 }
 
 @media (min-width: 768px) {
   .piezasGatos {
-    background: black
-      url(../../img/La_Isla_Gatos/viewM/la_isla_de_los_gatos_detalle_piezas.jpg)
-      repeat center/cover;
+    background: black url(../../img/La_Isla_Gatos/viewM/la_isla_de_los_gatos_detalle_piezas.jpg) repeat center/cover;
     width: 768px;
     height: 473px;
   }
@@ -93,9 +84,29 @@ li {
 
 @media (min-width: 1024px) {
   .piezasGatos {
-    background: black
-      url(../../img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg)
-      repeat center/cover;
+    background: black url(../../img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg) repeat center/cover;
+    width: 1024px;
+    height: 739px;
+  }
+}
+
+.piezasPocimas {
+  background: black url(../../img/Pocimas_Brebajes/viewS/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
+  width: 304px;
+  height: 197px;
+}
+
+@media (min-width: 768px) {
+  .piezasPocimas {
+    background: black url(../../img/Pocimas_Brebajes/viewM/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
+    width: 768px;
+    height: 473px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .piezasPocimas {
+    background: black url(../../img/Pocimas_Brebajes/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
     width: 1024px;
     height: 739px;
   }
@@ -106,14 +117,14 @@ li {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .piezas {
@@ -130,15 +141,15 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 @media (min-width: 768px) {
@@ -158,6 +169,10 @@ li {
 }
 
 .jugamosUna {
+  width: 304px;
+}
+
+.quintoElemento {
   width: 304px;
 }
 
@@ -199,15 +214,15 @@ li {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
   padding: 16px;
 }
 
@@ -218,10 +233,10 @@ nav menu {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
-  justify-content: space-around;
+      justify-content: space-around;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   border: 1px white solid;
   background: transparent;
 }
@@ -267,8 +282,14 @@ aside li {
   text-align: center;
 }
 
-section {
+.main-section {
   width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .main-section {
+    width: 700px;
+  }
 }
 
 .articulo .float .primero {
@@ -291,12 +312,12 @@ section {
   width: 180px;
   margin: 30px 16px 16px 0;
   -webkit-box-shadow: 3px 3px 3px red;
-  box-shadow: 3px 3px 3px red;
+          box-shadow: 3px 3px 3px red;
 }
 
 .left:hover {
   -webkit-filter: grayscale(80%);
-  filter: grayscale(80%);
+          filter: grayscale(80%);
 }
 
 .main_inicio {
@@ -304,11 +325,11 @@ section {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 address {
@@ -320,23 +341,42 @@ address {
   height: 100%;
 }
 
+@media (min-width: 768px) {
+  .reloj {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .reloj #relojMovimiento {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  width: 300px;
-  height: 50px;
+      -ms-flex-pack: center;
+          justify-content: center;
   background: black;
   color: white;
-  font-size: 48px;
+  font-size: 24px;
   border: none;
-  bottom: 0;
+  margin-bottom: 16px;
+}
+
+@media (min-width: 768px) {
+  .reloj #relojMovimiento {
+    font-size: 48px;
+    margin-bottom: 0;
+  }
 }
 
 .reloj #formReloj {
@@ -344,18 +384,20 @@ address {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 footer {
-  position: fixed;
+  background-color: black;
+  position: absolute;
   bottom: 0;
-  z-index: 999999;
   width: 100%;
+  height: 40px;
+  color: white;
 }
 
 @media (min-width: 1024px) {
@@ -363,11 +405,11 @@ footer {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: 2fr 2fr;
-    grid-template-columns: 2fr 2fr;
+        grid-template-columns: 2fr 2fr;
     gap: 4px;
     -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     width: 1200px;
   }
 }
@@ -388,10 +430,10 @@ footer {
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=styles.css.map */

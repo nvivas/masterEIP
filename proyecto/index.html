@@ -8,29 +8,51 @@
     <title>Juegos de mesa</title>
     <meta name="author" content="Ignacio Vivas Martín" />
     <meta name="description" content="Juegos de mesa favoritos">
-    <!-- link css y js -->
-    <link rel="stylesheet" href="./styles/css/styles.css">
-    <script src="js/index.js"></script>
     <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- link css -->
+    <link href="./styles/css/styles.css " rel="stylesheet">
+    <!-- link js -->
+    <script src="js/index.js"></script>
+    <script src="js/mensajes.js"></script>
 </head>
 
 <body onload="mueveReloj()">
     <header class="header">
-        <h1 class="juegosTitulo">Juegos de mesa</h1>
+        <h1 class="juegosTitulo"></h1>
+        <!-- Juegos de mesa -->
     </header>
-    <div id="navegador"></div>
+
     <nav class="arriba">
         <menu>
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="juegosMesa.html">Juegos de mesa</a></li>
-            <li><a href="rol.html">Rol ESDLA</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html" class="active inicio"></a></li>
+            <li><a href="juegosMesa.html" class="gatos"></a></li>
+            <li><a href="rol.html" class="rol"></a></li>
+            <li><a href="contacto.html" class="contacto"></a></li>
+            <!-- <li><input type="button" id="ingles" value="Pulsar" /></li> -->
         </menu>
     </nav>
-
+    <hr>
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="menu-items">
+                    <li><a href="index.html" class="active inicio"></a></li>
+                    <li><a href="juegosMesa.html" class="gatos"></a></li>
+                    <li><a href="rol.html" class="rol"></a></li>
+                    <li><a href="contacto.html" class="contacto"></a></li>
+                </div>
+            </div>
+        </div>
+    </nav>
     <main class="main_inicio">
-        <section>
+        <section class="main-section">
             <article class="articulo">
                 <div class="float">
                     <picture>
@@ -87,9 +109,7 @@
                 </div>
             </article>
         </section>
-        <div class="hola"></div>
     </main>
-    <script src="js/script.js" charset="utf-8"></script>
 </body>
 
 <footer>
@@ -97,8 +117,8 @@
         <div class='reloj'>
             <form name="form_reloj" id="formReloj">
                 <input type="text" name="reloj" size="10" id="relojMovimiento">
-                <p>Hecho por Ignacio Vivas Martín &copy;</p>
             </form>
+            <p class="madeIn">Hecho por Ignacio Vivas Martín &copy;</p>
         </div>
     </address>
 </footer>

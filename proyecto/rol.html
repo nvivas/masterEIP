@@ -13,8 +13,8 @@
     <script src="js/index.js"></script>
     <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <!-- librería anime  -->
-    <script src="anime.min.js"></script>
+    <!-- link js -->
+    <script src="js/mensajes.js"></script>
 
 </head>
 
@@ -22,14 +22,34 @@
     <header class="header">
         <h1 class="juegosTitulo">El señor de los Anillos</h1>
     </header>
-    <div id="navegador"></div>
-    <nav>
+
+    <nav class="arriba">
         <menu>
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="juegosMesa.html">Juegos de mesa</a></li>
-            <li><a href="rol.html">Rol ESDLA</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html" class="active inicio"></a></li>
+            <li><a href="juegosMesa.html" class="gatos"></a></li>
+            <li><a href="rol.html" class="rol"></a></li>
+            <li><a href="contacto.html" class="contacto"></a></li>
+            <!-- <li><input type="button" id="ingles" value="Pulsar" /></li> -->
         </menu>
+    </nav>
+
+    <nav>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="menu-items">
+                    <li><a href="index.html" class="active" id="inicio"></a></li>
+                    <li><a href="juegosMesa.html" id="gatos"></a></li>
+                    <li><a href="rol.html" id="rol"></a></li>
+                    <li><a href="contacto.html" id="contacto"></a></li>
+                </div>
+            </div>
+        </div>
     </nav>
 
     <main class="main_inicio">
