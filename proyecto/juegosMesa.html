@@ -5,33 +5,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegos de mesa</title>
+    <title>La Isla de los Gatos</title>
     <meta name="author" content="Ignacio Vivas Martín" />
     <meta name="description" content="Juegos de mesa favoritos">
-    <!-- inicio -->
-    <link rel="stylesheet" href="./styles/css/styles.css">
-    <script src="js/index.js"></script>
+    <link rel="icon" href="iconos/gatos.jpg">
+    <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
+    <!-- link css -->
+    <link href="./styles/css/styles.css " rel="stylesheet">
     <!-- link js -->
+    <script src="js/index.js"></script>
     <script src="js/mensajes.js"></script>
 </head>
 
-<body>
+<body onload="mueveReloj()">
     <header class="header">
-        <h1>Juegos de mesa</h1>
+        <h1 class="juegosTitulo"></h1>
     </header>
-
     <nav class="arriba">
         <menu>
             <li><a href="index.html" class="active inicio"></a></li>
-            <li><a href="juegosMesa.html" class="gatos"></a></li>
-            <li><a href="rol.html" class="rol"></a></li>
+            <li><a href="pocimas.html" class="pocimas"></a></li>
+            <li><a href="castillos.html" class="castillos"></a></li>
             <li><a href="contacto.html" class="contacto"></a></li>
-            <!-- <li><input type="button" id="ingles" value="Pulsar" /></li> -->
+            <li><a href="enlaces.html" class="enlaces"></a></li>
+            <li>
+                <button class="ingles"><img src="img/flag.png" alt="bandera Inglés"></button>
+                <button class="espanol"><img src="img/bandera.png" alt="bandera Español"></button>
+            </li>
         </menu>
     </nav>
-
+    <hr>
     <nav>
         <div class="navbar">
             <div class="container nav-container">
@@ -43,42 +47,24 @@
                 </div>
                 <div class="menu-items">
                     <li><a href="index.html" class="active inicio"></a></li>
-                    <li><a href="juegosMesa.html" class="gatos"></a></li>
-                    <li><a href="rol.html" class="rol"></a></li>
+                    <li><a href="pocimas.html" class="pocimas"></a></li>
+                    <li><a href="castillos.html" class="castillos"></a></li>
                     <li><a href="contacto.html" class="contacto"></a></li>
+                    <li><a href="enlaces.html" class="enlaces"></a></li>
                 </div>
             </div>
         </div>
     </nav>
-    <!-- <nav>
-        <menu>
-            <li><a href="juegosMesa.html" class="active">Isla de los gatos</a></li>
-            <li><a href="pocimas.html">Pócimas y brebajes</a></li>
-            <li><a href="castillos.html">Castillos de Borgoña</a></li>
-        </menu>
-    </nav> -->
     <main class="main_juegos">
         <section class="isla_gatos">
             <article class="articleGatos">
-                <h2 id="tituloGatos">Reseña de La Isla de los gatos</h2>
+                <h2 id="tituloGatos"></h2>
                 <picture class="piezas">
                     <div class="piezasGatos"></div>
-                    <!-- <img src="img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg" alt="piezas gatos" /> -->
                 </picture>
                 <div class="introduccion">
-                    <h2 class="tituloIntroduccion">INTRODUCCIÓN</h2>
-                    <p class="explicacion">Las leyendas de la ciudad siempre hablaron de una fabulosa isla poblada por
-                        una raza de sabios,
-                        fieros y juguetones gatos. ¡Recientemente, unos exploradores de Punta de Tempestad han revelado
-                        que
-                        esto es real! Pero
-                        estos gatos se encuentran amenazados por la proximidad de los ejércitos de Vesh Manoscura, quien
-                        no
-                        se detendrá
-                        hasta destruir la isla y el resto del mundo. Los árboles arderán y las viejas piedras se
-                        romperán,
-                        ¡pero aún hay una
-                        oportunidad para salvar a estas nobles criaturas!</p>
+                    <h2 class="tituloIntroduccion"></h2>
+                    <p class="explicacion expGatos"></p>
                 </div>
             </article>
 
@@ -105,24 +91,15 @@
 
             <article class="articleGatos">
                 <div class="introduccion">
-                    <h2 class="tituloIntroduccion">DETALLE</h2>
-                    <p class="explicacion">En nuestro país se encuentra publicado en una versión en español por
-                        <strong>Maldito Games</strong> (la dependencia del idioma es
-                        relevante en varios tipos de cartas, además del reglamento). Permite partidas de <strong>1 a 4
-                            jugadores,</strong> con una edad mínima
-                        sugerida de <strong>8 años</strong> y una duración aproximada de <strong>entre 60 y 90
-                            minutos.</strong> El precio de venta al
-                        público es de 50€. Para
-                        esta reseña se ha utilizado una copia de la versión en español de Maldito Games que la propia
-                        editorial nos ha cedido
-                        amablemente.
+                    <h2 class="detalle"></h2>
+                    <p class="explicacion detGatos">
                     </p>
                 </div>
             </article>
 
             <article class="articleGatos">
                 <div class="introduccion">
-                    <h2 class="tituloIntroduccion">Enlaces a páginas para comprar</h2>
+                    <h2 class="enlacesComprar"></h2>
                     <div class="enlaces">
                         <li>
                             <a href="https://zacatrus.es/la-isla-de-los-gatos.html" class="introduccion enlace"
@@ -149,7 +126,7 @@
 
             <article class="articleGatos">
                 <div class="introduccion">
-                    <h2 class="tituloIntroduccion">Video explicativo</h2>
+                    <h2 class="videoExplicativo"></h2>
                     <video src="video/Conociendo La Isla de los Gatos.mp4" poster="img/La_Isla_Gatos/FT_IslaGatos.jpg"
                         controls class="video"></video>
                 </div>
@@ -157,5 +134,15 @@
         </section>
     </main>
 </body>
+<footer>
+    <address>
+        <div class='reloj'>
+            <form name="form_reloj" id="formReloj">
+                <input type="text" name="reloj" size="10" id="relojMovimiento">
+            </form>
+            <p class="madeIn"><span>&copy;</span></p>
+        </div>
+    </address>
+</footer>
 
 </html>

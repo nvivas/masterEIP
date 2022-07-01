@@ -1,3 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=The+Nautigal:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
+
 @import "_vars";
 @import "_mixins";
 
@@ -6,8 +9,7 @@
 }
 
 html {
-  min-height: 100%;
-  position: relative;
+  @include html;
 }
 
 body {
@@ -19,18 +21,37 @@ body {
   margin-bottom: 40px;
 }
 
+.ingles,
+.espanol {
+  @include dimensiones(32px, 20px);
+  background-color: $transparente;
+}
+.header {
+  @include imagenPortada;
+  // background: $negro url(../../img/juegos-de-mesa.jpg) repeat center / cover;
+}
+
 h1 {
   @include dimensiones(100%, 100px);
   position: relative;
   @include display;
   margin: 8px;
+  color: $blanco;
+  font-family: "The Nautigal", cursive;
+  font-size: 50px;
+  @include viewM {
+    font-size: 80px;
+  }
 }
 
 li {
   list-style: none;
 }
 
-#tituloGatos {
+#tituloGatos,
+#tituloPocimas,
+#tituloCastillos,
+#enlaceReflexion {
   width: 100%;
   padding: 30px;
   font-size: 12px;
@@ -45,13 +66,15 @@ li {
   }
 }
 
+.reflexion {
+  margin-top: 32px;
+}
+
 .piezasGatos {
   background: $negro
     url(../../img/La_Isla_Gatos/viewS/la_isla_de_los_gatos_detalle_piezas.jpg)
     repeat center / cover;
   @include dimensiones(304px, 197px);
-  @include viewS {
-  }
   @include viewM {
     background: $negro
       url(../../img/La_Isla_Gatos/viewM/la_isla_de_los_gatos_detalle_piezas.jpg)
@@ -62,7 +85,7 @@ li {
     background: $negro
       url(../../img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg)
       repeat center / cover;
-    @include dimensiones(1024px, 739px);
+    @include dimensiones(1200px, 739px);
   }
 }
 
@@ -81,7 +104,26 @@ li {
     background: $negro
       url(../../img/Pocimas_Brebajes/pocimas_brebajes_detalle_caldero.jpg)
       repeat center / cover;
-    @include dimensiones(1024px, 739px);
+    @include dimensiones(1200px, 739px);
+  }
+}
+
+.piezasCastillos {
+  background: $negro
+    url(../../img/Castillos_Borgona/viewS/the_castles_of_burgundy_detalle.jpg)
+    repeat center / cover;
+  @include dimensiones(304px, 197px);
+  @include viewM {
+    background: $negro
+      url(../../img/Castillos_Borgona/viewM/the_castles_of_burgundy_detalle.jpg)
+      repeat center / cover;
+    @include dimensiones(768px, 473px);
+  }
+  @include viewL {
+    background: $negro
+      url(../../img/Castillos_Borgona/the_castles_of_burgundy_detalle.jpg)
+      repeat center / cover;
+    @include dimensiones(1200px, 739px);
   }
 }
 
@@ -91,6 +133,7 @@ li {
   align-items: center;
   flex-direction: column;
 }
+
 .piezas {
   padding-bottom: 16px;
 }
@@ -105,10 +148,10 @@ li {
   flex-direction: column;
 
   @include viewM {
-    width: 768px;
+    width: 758px;
   }
   @include viewL {
-    width: 1024px;
+    width: 1190px;
   }
 }
 
@@ -144,7 +187,10 @@ li {
   margin-bottom: 16px;
 }
 
-.tituloIntroduccion {
+.tituloIntroduccion,
+.detalle,
+.enlacesComprar,
+.videoExplicativo {
   margin-bottom: 16px;
   text-decoration: underline;
 }
@@ -155,12 +201,6 @@ li {
   padding: 16px;
 }
 
-// .arriba {
-//   menu {
-//     border: none;
-//   }
-// }
-
 .arriba {
   menu {
     border: none;
@@ -170,21 +210,41 @@ li {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      border: 1px $blanco solid;
-      background: transparent;
+      border: $borde;
+      background: $transparente;
       li {
         a {
           cursor: pointer;
           text-decoration: none;
           color: $rojo;
-          font-size: 1.05rem;
+          font-size: 11px;
           &:hover {
             color: $blanco;
+          }
+          @include viewL {
+            font-size: 16px;
           }
 
           .active {
             color: $blanco;
           }
+        }
+      }
+    }
+  }
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: $blanco;
+  menu {
+    li {
+      a {
+        &:hover {
+          color: $negro;
         }
       }
     }
@@ -217,10 +277,6 @@ aside {
   }
 }
 
-// section {
-//   width: 100%;
-// }
-
 .main-section {
   width: 100%;
   @include viewL {
@@ -232,17 +288,17 @@ aside {
   .float {
     .primero {
       color: $amarillo;
-      margin-top: 20px;
+      @include parrafos;
     }
 
     .segundo {
       color: $rojo;
-      margin-top: 20px;
+      @include parrafos;
     }
 
     .tercero {
       color: $purple;
-      margin-top: 20px;
+      @include parrafos;
     }
   }
 }
@@ -275,7 +331,6 @@ address {
 
   #relojMovimiento {
     @include display;
-    // @include dimensiones(300px, 50px);
     background: $negro;
     color: $blanco;
     font-size: 24px;
@@ -297,8 +352,7 @@ footer {
   background-color: $negro;
   position: absolute;
   bottom: 0;
-  width: 100%;
-  height: 40px;
+  @include dimensiones(100%, 40px);
   color: $blanco;
 }
 
@@ -308,6 +362,7 @@ footer {
     grid-template-columns: 2fr 2fr;
     gap: 4px;
     justify-content: center;
+    align-items: center;
     width: 1200px;
   }
 }
@@ -332,16 +387,6 @@ footer {
   }
 }
 @include viewSmax {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  body {
-    font-family: "Poppins", sans-serif;
-  }
-
   .arriba {
     display: none;
   }
@@ -358,10 +403,7 @@ footer {
 
     .menu-items {
       padding-top: 120px;
-      // box-shadow: inset 0 0 2000px $burguer;
       @include dimensiones(100%, 100vh);
-      // height: 100vh;
-      // width: 100%;
       transform: translate(-150%);
       display: flex;
       flex-direction: column;
@@ -484,12 +526,137 @@ footer {
   flex-direction: column;
 }
 
+.otros {
+  margin-right: 20px;
+}
+
 .tituloFormulario {
   padding: 16px;
-  font-size: 40px;
+  font-size: 32px;
+  @include viewM {
+    font-size: 40px;
+  }
 }
 
 .formulario-contenedor {
-  @include dimensiones(75%, 600px);
-  border: 1px $blanco solid;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.marco_form {
+  width: 75%;
+}
+
+.radioJuegos {
+  @include display;
+  .radioJugon {
+    padding: 24px;
+  }
+}
+
+input[type="radio"] {
+  margin: 16px 16px 0;
+}
+.checkbox-container {
+  input[type="checkbox"] {
+    margin: 16px 16px 0;
+  }
+}
+
+.checkbox-container {
+  margin: 10px;
+}
+
+.radioJugon,
+.juegos-check {
+  padding: 4px 20px 12px;
+}
+
+.radio,
+.radioJugon,
+.juegos-check {
+  width: 100%;
+}
+
+#nombre,
+#apellidos,
+#jugadores {
+  margin-left: 8px;
+}
+
+#jugadores {
+  @include dimensiones(48%, 25px);
+}
+
+.txt_nombre,
+.txt_apellidos {
+  font-size: 14px;
+}
+
+.nombre,
+.apellidos {
+  width: 300px;
+  @include viewM {
+    width: 600px;
+  }
+}
+
+.select_jugadores {
+  width: 300px;
+  @include viewM {
+    width: 600px;
+  }
+}
+
+.labelJugadores {
+  font-size: 12px;
+  margin-right: 10px;
+  @include viewM {
+    font-size: 19px;
+  }
+}
+
+#nombre,
+#apellidos {
+  @include dimensiones(75%, 25px);
+}
+
+.txt_nombre {
+  margin-right: 7px;
+}
+
+.botones {
+  @include dimensiones(75%, 50px);
+  @include display;
+  gap: 30px;
+  margin-top: 32px;
+
+  button {
+    @include dimensiones(40%, 50px);
+    background: $transparente;
+    color: $rojo;
+    border: $borde;
+  }
+}
+
+.formGuardar {
+  @include dimensiones(300px, 50px);
+  background: $verde;
+  color: $blanco;
+  @include display;
+  font-size: 30px;
+}
+
+.tituloPaginaEnlaces {
+  @include display;
+  margin-top: 32px;
+}
+
+.listaPaginaEnlaces {
+  @include display;
+  flex-direction: column;
+  margin-top: 32px;
 }

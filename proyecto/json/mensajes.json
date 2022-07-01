@@ -1,15 +1,133 @@
 {
   "es": {
     "juegos": "Juegos de Mesa",
+    "gatos": "La Isla de los Gatos",
     "inicio": "Inicio",
-    "rol": "Rol",
-    "contacto": "Contacto"
+    "pocimas": "Pócimas y Brebajes",
+    "contacto": "Contacto",
+    "castillos": "Castillos de Borgoña",
+    "enlacesP": "Enlaces",
+    "reflexion": "Página de la reflexion",
+    "enlaceReflexion": "Reflexión sobre juegos de mesa",
+    "madeIn": " Hecho por Ignacio Vivas Martín",
+    "tituloGatos": "Reseña de la Isla de los Gatos",
+    "tituloPocimas": "Reseña de la Pócimas y Brebajes",
+    "tituloCastillos": "Reseña de Castillos de Borgoña",
+    "tituloIntroduccion": "INTRODUCCION",
+    "detalle": "DETALLE",
+    "enlacesComprar": "Enlaces a páginas para comprar",
+    "videoExplicativo": "Vídeo explicativo",
+    "primero": "En un mundo donde los teléfonos inteligentes y el Internet nos facilitan la comunicación digital, los  se han transformado en un algo diferente. Estos ahora son sólo datos en una computadora, a través de la cual nos  con otras personas, sin embargo, tenemos la impresión de que se ha perdido el contacto humano, que el acto de jugar ya no implica jugar con otros sino contra un programa, o con personas que jamás conoceremos. Es en este ámbito donde muchos estudios hablan acerca del desgaste que ha tenido la sociedad debido a los medios digitales, pero una cosa que muchos ignoran es que los juegos de mesa están resurgiendo del olvido en el que el mundo digital intentó enterrarlos. Junto con esto, el auge y la fama que han tenido los ‘geeks’ en los últimos años han ayudado a que esto tenga lugar. Dentro del panorama de los juegos de mesa tenemos los clásicos de la infancia que no han cambiado en décadas, más que por algunas mejoras electrónicas, contadores, bases que se mueven solas, etc., con el fin de hacerlo más ante la población crecientemente digital, pero no hemos observado a los nuevos juegos de mesa que surgen. Juegos que han estado varios años en las repisas de las tiendas de cómics, tales como ‘Los colonos de Catan’, ‘Takenoko’, ‘Mansion of Madness’ entre otros, que se inspiran en todos los terrenos del conocimiento humano; política, historia, literatura; estos juegos no temen utilizar cualquier recurso disponible para hacer de unas cuantas horas de juego las más divertidas de la semana.",
+
+    "segundo": " Estos juegos son diferentes a los tradicionales, en el sentido que llevan un sentido de estrategia más profundo que jugar Monopoly, Maratón o algún otro. Poseen un fuerte componente de planeación, inclusive un poco de estrategia que los hacen más interesantes. Todos estos juegos, en su gran variedad, tienen diferentes tiempos de terminación, hay algunos que duran 15 minutos, tales como ‘coup’ hasta juegos mucho más complejos y largos, como ‘Twilight Imperium’ que tiene un periodo de duración aproximado de 6 horas. Todos estos juegos y más cumplen la función de llenar un espacio en las tardes de entretenimiento familiar, y pueden ser jugados por todos, chicos y grandes, todo depende del tipo de juego. Esta necesidad de vivir aventuras en mundos distantes, conocer personajes excéntricos y raros puede ayudar a las personas a salir de su caparazón. No hay duda de que la imagen popular de las personas que se involucran en este tipo de actividades es la de inadaptados sociales, que no saben hacer otra cosa que utilizar estos medios como escape de una vida que no quieren aceptar. Sin embargo, cualquier visita a una tienda de juegos nos hace encontrar un panorama totalmente diferente, personas de todo tipo, etnia, sexualidad y raza se juntan a vivir emocionantes aventuras, a salvar reinos y derrotar villanos, inclusive a hacer algo tan simple como alimentar un panda.",
+
+    "tercero": " Los juegos de mesa nos ayudan a recuperar ese sentimiento de maravilla que el mundo moderno, en cierta manera, ha eliminado. No podemos negar que la tecnología es increíble, que la comunicación intercontinental es algo con lo que nuestros bisabuelos no podían ni soñar. Pero tenemos que tener en cuenta el componente humano. Quien no recuerda las noches de jugar ‘Mario Kart’ con tus amigos, todos amontonados en un televisor de 19 pulgadas, de tener que ir a un arcade o una tienda para poder jugar tus videojuegos con tus amigos. Ahora todo el digital, los nuevos juegos no te permiten jugar más de dos personas por consola, y es la nostalgia que le tenemos a los videojuegos de antes, y de manera anterior, a los juegos de mesa la que nos hacen añorar este pasatiempo. Hoy en día tenemos una selección casi infinita de juegos que podemos probar: sólo es cuestión de reunirte con tus amigos y recapturar esa maravilla que teníamos cuando éramos niños.",
+
+    "expGatos": "Las leyendas de la ciudad siempre hablaron de una fabulosa isla poblada por una raza de sabios, fieros y juguetones gatos. ¡Recientemente, unos exploradores de Punta de Tempestad han revelado que esto es real! Pero estos gatos se encuentran amenazados por la proximidad de los ejércitos de Vesh Manoscura, quien no se detendrá hasta destruir la isla y el resto del mundo. Los árboles arderán y las viejas piedras se romperán, ¡pero aún hay una oportunidad para salvar a estas nobles criaturas!",
+
+    "detGatos": "En nuestro país se encuentra publicado en una versión en español por Maldito Games (la dependencia del idioma es relevante en varios tipos de cartas, además del reglamento). Permite partidas de 1 a 4 jugadores, con una edad mínima sugerida de 8 años y una duración aproximada de entre 60 y 90 minutos. El precio de venta al público es de 50€. Para esta reseña se ha utilizado una copia de la versión en español de Maldito Games que la propia editorial nos ha cedido amablemente.",
+
+    "expPyB": "Una vez al año los mejores milagreros y matasanos del territorio se reúnen en Timburgo para preparar sus brebajes para el olor de pies, la morriña, el hipo y el mal de amores. Sin embargo, cada curandero tiene su propio preparado especial. Cada jugador extrae ingredientes de su propio revoltijo de elementos variados, combinándolos durante la partida hasta que considera que su compuesto especial está a punto. Pero hay que tener cuidado ¡cualquier exceso en la cantidad de tales ingredientes especiales podría hacer estallar la pócima! Por tanto, saber parar a tiempo, aunque suponga conformarse con menores beneficios para empezar, con vistas a mayores rendimientos futuros e ingredientes más valiosos, podría ser la clave. Así que reserva tus ingredientes más valiosos hasta que puedas preparar una pócima tan potente que deje a esa pandilla de embusteros y cuenta-botones a la altura del betún.",
+
+    "detPyB": "En nuestro país se encuentra disponible en español de la mano de Devir. Permite partidas de 2 a 4 jugadores, con una edad mínima sugerida de 10 años y una duración aproximada de unos 45 minutos. El precio de venta al público es de 45€. Para esta reseña se ha utilizado una copia de la versión en español de Devir, que la propia editorial nos ha cedido amablemente.",
+
+    "expCatillos": "Cuando descubres un nuevo autor, normalmente porque hemos probado uno de sus grandes juegos, solemos pasar por una fase de euforia en la que tenemos el impulso de conocer todo lo que ha publicado hasta la fecha. Nos metemos en la BGG, consultamos rankings, leemos y releemos reseñas, hasta que volvemos a caer en el consumismo lúdico. Y esto amigos es lo que me sucedió con el querido Stefan Feld. Cuando mi ludoteca aún se encontraba en sus albores, el hype de la comunidad se disparó tras la presentación en Nurenberg del ya famoso Bora Bora. Al poco tiempo decidí que ese juego debía ser mío. Y así fue. Tras quedar encantado con las mecánicas y sensaciones, entró en mí el fervor feldiano. Y así entró en mi ludoteca el que es a día de hoy el juego que mejor posición ocupa en el ranking general de la BGG: The Castles of Burgundy.",
+
+    "expCatillos2": " El valle del Loira durante el siglo XV. Como príncipes influyentes, los jugadores dedican sus esfuerzos a construir y comerciar con esmero para que sus dominios destaquen.",
+
+    "detCastillos": "Así se nos presenta este The Castle of Burgundy, que, como ya hemos dicho, fue diseñado por Stefan Feld, autor de otros grandes juegos como In the Year of the Dragon, Bora Bora o Trajan. Las ilustraciones corren de parte de Julien Delval y Harald Lieske. El juego fue publicado por el tándem Ravensbuger – Alea en el año 2011.",
+
+    "detCastillos2": "La edad mínima recomendada es 12 años. Permite partidas de 2 a 4 jugadores con una duración aproximada de unos 90 minutos por partida. Ahora, con la salida al mercado del 20 aniversario y sus expansiones, añade a 5 los jugadores",
+
+    "txt_nombre": "Nombre",
+    "txt_apellidos": "Apellidos",
+
+    "labelJugadores": "Cuántas personas jugáis",
+    "personaUna": "Juego en solitario",
+    "personaDos": "2 personas",
+    "personaTres": "3 o 4 personas",
+    "personaCinco": "5 o más personas",
+
+    "juegosJugar": "Juegos",
+    "root": "Root",
+    "otros": "Otros",
+
+    "juegaSemana": "Cuanto juegas a la semana",
+    "intentoUno": "Intento 1 día",
+    "minimoUno": "Mínimo 1 día",
+    "dos": "2 días",
+    "tres": "3 o más días",
+
+    "guardar": "Guardar",
+    "limpiar": "Limpiar",
+    "tituloFormulario": "Cuéntame de ti",
+    "formGuardar": "Guardado con exito",
+    "tituloPaginaEnlaces": "Enlaces que he usado para el proyecto"
   },
 
   "en": {
-    "juegos": "Games",
+    "juegos": "Board games",
+    "gatos": "The isle of Cats",
     "inicio": "Home",
-    "rol": "Rol",
-    "contacto": "Contact"
+    "pocimas": "The Quacks of Quendlinburg",
+    "contacto": "Contact",
+    "castillos": "The Castles of Burbundy",
+    "enlacesP": "Links",
+    "reflexion": "reflection page",
+    "enlaceReflexion": "Reflection on board games",
+    "madeIn": "Made by Ignacio Vivas Martín",
+    "tituloGatos": "Review of The isle of Cats",
+    "tituloPocimas": "Review of The Quacks of Quendlinburg",
+    "tituloCastillos": "Review of The Castles of Burbundy",
+    "tituloIntroduccion": "INTRODUCTION",
+    "detalle": "DETAIL",
+    "enlacesComprar": "Links to sites to buy",
+    "videoExplicativo": "Explanatory video",
+
+    "primero": "In a world where smartphones and the internet facilitate digital communication, games have become something different. These are now just data on a computer, through which we interact with other people, yet we have the impression that human contact has been lost, that the act of playing no longer involves playing with others but against a programme, or with people we will never meet. It is in this area that many studies talk about the erosion of society due to digital media, but one thing that many ignore is that board games are re-emerging from the oblivion in which the digital world tried to bury them. Along with this, the rise and fame that geeks have had in recent years has helped this to take place. Within the board game landscape we have the childhood classics that haven't changed in decades, other than some electronic improvements, counters, self moving bases, etc., in order to make it more appealing to the increasingly digital population, but we haven't looked at the new board games that are emerging. Games that have been on the shelves of comic book shops for several years, such as 'Settlers of Catan', 'Takenoko', 'Mansion of Madness' among others, that draw on all terrains of human knowledge; politics, history, literature; these games are not afraid to use whatever resources are available to make a few hours of play the most fun of the week. ",
+
+    "segundo": "These games are different from traditional games, in the sense that they carry a deeper sense of strategy than playing Monopoly, Marathon or some other game. They have a strong planning component, even a bit of strategy that makes them more interesting. All of these games, in their great variety, have different completion times, with some lasting 15 minutes, such as 'coup', to much longer and more complex games, such as 'Twilight Imperium' which has a duration period of approximately 6 hours. All these games and more serve the function of filling a space in family entertainment evenings, and can be played by everyone, young and old, depending on the type of game. This need to live adventures in distant worlds, to meet eccentric and weird characters can help people come out of their shells. There is no doubt that the popular image of people who engage in such activities is that of social misfits, who know no better than to use these media as an escape from a life they do not want to accept. However, any visit to a game shop paints a totally different picture, with people of all types, ethnicities, sexualities and races coming together for exciting adventures, saving kingdoms and defeating villains, even doing something as simple as feeding a panda.",
+
+    "tercero": "Board games help us recapture that sense of wonder that the modern world has, in a way, removed. We cannot deny that technology is incredible, that intercontinental communication is something our great-grandparents could not even dream of. But we have to take into account the human component. Who doesn't remember the nights of playing 'Mario Kart' with your friends, all crammed into a 19 inch TV, of having to go to an arcade or a shop to play your video games with your friends. Now all the digital, new games don't allow you to play more than two people per console, and it is the nostalgia we have for the video games of yesteryear, and before that, board games that make us long for this pastime. Nowadays we have an almost infinite selection of games to try: it's just a matter of getting together with your friends and recapturing the wonder we had as kids.",
+
+    "expGatos": "The legends of the city have always spoken of a fabulous island populated by a race of wise, fierce and playful cats. Recently, explorers from Tempest Point have revealed that this is real! But these cats are threatened by the approaching armies of Vesh Manoscura, who will not stop until he destroys the island and the rest of the world. Trees will burn and old stones will break, but there is still a chance to save these noble creatures!",
+
+    "detGatos": "In our country it is published in a Spanish version by Maldito Games (the language dependence is relevant in several types of cards, in addition to the rules). It allows games for 1 to 4 players, with a suggested minimum age of 8 years and an approximate duration of 60 to 90 minutes. The retail price is €50. For this review we have used a copy of the Spanish version from Maldito Games, kindly provided by the publisher.",
+
+    "expPyB": "Once a year, the territory's best miracle workers and healers gather in Timburg to prepare their concoctions for foot odour, homesickness, hiccups and lovesickness. However, each healer has his own special concoction. Each player draws ingredients from his own jumble of assorted elements, combining them during the game until he feels his special compound is ready. But be careful: any excess in the amount of such special ingredients could cause the potion to explode! Therefore, knowing how to stop in time, even if it means settling for lower profits to begin with, with a view to higher future yields and more valuable ingredients, could be the key. So save your most valuable ingredients until you can concoct a potion so potent that it will leave that bunch of dupes and button-counters in the dust.",
+
+    "detPyB": "In our country it is available in Spanish from Devir. It allows games for 2 to 4 players, with a suggested minimum age of 10 years old and an approximate duration of 45 minutes. The retail price is 45€. For this review we have used a copy of the Spanish version from Devir, kindly provided by the publisher.",
+
+    "expCatillos": "When you discover a new author, usually because we've tried one of their great games, we usually go through a phase of euphoria in which we have the urge to get to know everything they've published to date. We get into the BGG, check rankings, read and reread reviews, until we fall back into playful consumerism. And this, my friends, is what happened to me with the beloved Stefan Feld. When my toy library was still in its infancy, the community's hype went through the roof after the presentation of the now famous Bora Bora in Nurenberg. Soon after, I decided that this game had to be mine. And so it was. After being enchanted by the mechanics and sensations, I was overcome with Feldian fervour. And so into my toy library came the game that is to this day the game that occupies the best position in the general ranking of the BGG: The Castles of Burgundy.",
+
+    "expCatillos2": " The Loire Valley during the 15th century. As influential princes, players devote their efforts to building and trading with care to make their domains stand out.",
+
+    "detCastillos": "The Castle of Burgundy was designed by Stefan Feld, author of other great games such as In the Year of the Dragon, Bora Bora or Trajan. The illustrations are by Julien Delval and Harald Lieske. The game was published by the Ravensbuger - Alea tandem in 2011.",
+
+    "detCastillos2": "The minimum recommended age is 12 years old. It allows games of 2 to 4 players with an approximate duration of 90 minutes per game. Now, with the release of the 20th anniversary and its expansions, the number of players has increased to 5.",
+
+    "txt_nombre": "Name",
+    "txt_apellidos": "Surname",
+
+    "labelJugadores": "How many people play",
+    "personaUna": "Solitaire play",
+    "personaDos": "2 people",
+    "personaTres": "3 or 4 people",
+    "personaCinco": "5 people or more",
+
+    "juegosJugar": "Games",
+    "root": "Root",
+    "otros": "Other",
+
+    "juegaSemana": "How much do you play per week",
+    "intentoUno": "Attempt 1 day",
+    "minimoUno": "Minimum 1 day",
+    "dos": "2 days",
+    "tres": "3 days or more",
+    "guardar": "Save",
+    "limpiar": "Clean",
+    "tituloFormulario": "Tell me about yourself",
+    "formGuardar": "Successfully saved",
+    "tituloPaginaEnlaces": "Links I have used for the project"
   }
 }

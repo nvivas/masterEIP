@@ -7,7 +7,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Juegos de mesa</title>
     <meta name="author" content="Ignacio Vivas Martín" />
-    <meta name="description" content="Juegos de mesa favoritos">
+    <meta name="description"
+        content="Juegos de mesa favoritos, isla de los gatos, castillos de borgoña, pocimas y brebajes, Jugar en familia, Jugos en solitario, 60 minutos, 90 minutos, menos de 60 minutos">
+    <link rel="icon" href="img/juegos-de-mesa.jpg">
     <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- link css -->
@@ -20,16 +22,19 @@
 <body onload="mueveReloj()">
     <header class="header">
         <h1 class="juegosTitulo"></h1>
-        <!-- Juegos de mesa -->
     </header>
-
     <nav class="arriba">
         <menu>
             <li><a href="index.html" class="active inicio"></a></li>
             <li><a href="juegosMesa.html" class="gatos"></a></li>
-            <li><a href="rol.html" class="rol"></a></li>
+            <li><a href="pocimas.html" class="pocimas"></a></li>
+            <li><a href="castillos.html" class="castillos"></a></li>
             <li><a href="contacto.html" class="contacto"></a></li>
-            <!-- <li><input type="button" id="ingles" value="Pulsar" /></li> -->
+            <li><a href="enlaces.html" class="enlacesP"></a></li>
+            <li>
+                <button class="ingles"><img src="img/flag.png" alt="bandera Inglés"></button>
+                <button class="espanol"><img src="img/bandera.png" alt="bandera Español"></button>
+            </li>
         </menu>
     </nav>
     <hr>
@@ -45,8 +50,10 @@
                 <div class="menu-items">
                     <li><a href="index.html" class="active inicio"></a></li>
                     <li><a href="juegosMesa.html" class="gatos"></a></li>
-                    <li><a href="rol.html" class="rol"></a></li>
+                    <li><a href="pocimas.html" class="pocimas"></a></li>
+                    <li><a href="castillos.html" class="castillos"></a></li>
                     <li><a href="contacto.html" class="contacto"></a></li>
+                    <li><a href="enlaces.html" class="enlacesP"></a></li>
                 </div>
             </div>
         </div>
@@ -58,55 +65,22 @@
                     <picture>
                         <img class="left" src="./img/juegos-de-mesa.jpg" alt="juegos">
                     </picture>
-                    <p class="primero">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem distinctio quaerat
-                        adipisci
-                        labore perferendis in repellat tempore eius culpa? Omnis incidunt ab illum ratione fuga est
-                        officiis. Qui deserunt possimus dolor, facilis tenetur consequuntur porro. Molestiae commodi
-                        doloribus aspernatur similique laboriosam vero nobis tenetur voluptatibus, at harum laborum
-                        itaque
-                        ab ratione hic. Perferendis dolorem molestiae cumque et nobis? Animi laboriosam labore
-                        obcaecati,
-                        cupiditate quidem nihil, voluptatibus tempore iure facere mollitia magni. Non laborum unde neque
-                        reprehenderit facere ullam placeat repudiandae ea adipisci blanditiis accusamus atque, alias
-                        ratione
-                        voluptate labore qui mollitia quidem! Tenetur totam vel quam quo maxime fugit.
-                    </p>
+                    <p class="primero"></p>
                     <picture>
                         <img class="left" src="./img/pocimas_brebajes.jpg" alt="juegos">
                     </picture>
                     <p class="segundo">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem distinctio quaerat
-                        adipisci
-                        labore perferendis in repellat tempore eius culpa? Omnis incidunt ab illum ratione fuga est
-                        officiis. Qui deserunt possimus dolor, facilis tenetur consequuntur porro. Molestiae commodi
-                        doloribus aspernatur similique laboriosam vero nobis tenetur voluptatibus, at harum laborum
-                        itaque
-                        ab ratione hic. Perferendis dolorem molestiae cumque et nobis? Animi laboriosam labore
-                        obcaecati,
-                        cupiditate quidem nihil, voluptatibus tempore iure facere mollitia magni. Non laborum unde neque
-                        reprehenderit facere ullam placeat repudiandae ea adipisci blanditiis accusamus atque, alias
-                        ratione
-                        voluptate labore qui mollitia quidem! Tenetur totam vel quam quo maxime fugit.
+
                     </p>
                     <picture>
-                        <img class="left" src="./img/juegos-de-mesa.jpg" alt="juegos">
+                        <img class="left" src="./img/48909694257_90f452a533_b.jpg" alt="juegos">
                     </picture>
-                    <p class="tercero">
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Suscipit rem distinctio quaerat
-                        adipisci
-                        labore perferendis in repellat tempore eius culpa? Omnis incidunt ab illum ratione fuga est
-                        officiis. Qui deserunt possimus dolor, facilis tenetur consequuntur porro. Molestiae commodi
-                        doloribus aspernatur similique laboriosam vero nobis tenetur voluptatibus, at harum laborum
-                        itaque
-                        ab ratione hic. Perferendis dolorem molestiae cumque et nobis? Animi laboriosam labore
-                        obcaecati,
-                        cupiditate quidem nihil, voluptatibus tempore iure facere mollitia magni. Non laborum unde neque
-                        reprehenderit facere ullam placeat repudiandae ea adipisci blanditiis accusamus atque, alias
-                        ratione
-                        voluptate labore qui mollitia quidem! Tenetur totam vel quam quo maxime fugit.
-                    </p>
+                    <p class="tercero"></p>
                 </div>
+            </article>
+        </section>
+        <section>
+            <article>
             </article>
         </section>
     </main>
@@ -118,7 +92,7 @@
             <form name="form_reloj" id="formReloj">
                 <input type="text" name="reloj" size="10" id="relojMovimiento">
             </form>
-            <p class="madeIn">Hecho por Ignacio Vivas Martín &copy;</p>
+            <p class="madeIn"><span>&copy;</span></p>
         </div>
     </address>
 </footer>

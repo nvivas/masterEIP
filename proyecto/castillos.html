@@ -5,56 +5,136 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegos de mesa</title>
+    <title>Castillos de Borgoña</title>
     <meta name="author" content="Ignacio Vivas Martín" />
     <meta name="description" content="Juegos de mesa favoritos">
-    <!-- inicio -->
-    <link rel="stylesheet" href="./styles/css/styles.css">
-    <script src="js/index.js"></script>
+    <link rel="icon" href="iconos/castillos.jpg">
+    <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- link css -->
+    <link href="./styles/css/styles.css " rel="stylesheet">
+    <!-- link js -->
+    <script src="js/index.js"></script>
+    <script src="js/mensajes.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <h1>Juegos de mesa</h1>
+        <h1 class="juegosTitulo"></h1>
     </header>
-    <nav>
+    <nav class="arriba">
         <menu>
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="juegosMesa.html">Juegos de mesa</a></li>
-            <li><a href="rol.html">Rol ESDLA</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html" class="active inicio"></a></li>
+            <li><a href="juegosMesa.html" class="gatos"></a></li>
+            <li><a href="pocimas.html" class="pocimas"></a></li>
+            <li><a href="contacto.html" class="contacto"></a></li>
+            <li><a href="enlaces.html" class="enlacesP"></a></li>
+            <li>
+                <button class="ingles"><img src="img/flag.png" alt="bandera Inglés"></button>
+                <button class="espanol"><img src="img/bandera.png" alt="bandera Español"></button>
+            </li>
         </menu>
     </nav>
+    <hr>
     <nav>
-        <menu>
-            <li><a href="juegosMesa.html" class="active">Isla de los gatos</a></li>
-            <li><a href="pocimas.html">Pócimas y brebajes</a></li>
-            <li><a href="castillos.html">Castillos de Borgoña</a></li>
-        </menu>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="menu-items">
+                    <li><a href="index.html" class="active inicio"></a></li>
+                    <li><a href="juegosMesa.html" class="gatos"></a></li>
+                    <li><a href="pocimas.html" class="pocimas"></a></li>
+                    <li><a href="contacto.html" class="contacto"></a></li>
+                    <li><a href="enlaces.html" class="enlacesP"></a></li>
+                </div>
+            </div>
+        </div>
     </nav>
     <main class="main_juegos">
         <section class="isla_gatos">
-            <article class="">
-                <h2 id="tituloGatos">Castillos de Borgoña</h2>
-                <p class="presentacion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, molestias?</p>
-                <script type="text/javascript" src="js/jquery-1.10.2.min.js"></script>
-                <div class="contenedor"></div>
+            <article class="articleGatos">
+                <h2 id="tituloCastillos"></h2>
+                <picture class="piezas">
+                    <div class="piezasCastillos"></div>
+                </picture>
+                <div class="introduccion">
+                    <h2 class="tituloIntroduccion"></h2>
+                    <p class="explicacion expCatillos"></p>
+                    </br>
+                    <p class="explicacion expCatillos2"></p>
+                </div>
+            </article>
+
+            <article class="dflex">
+                <div class="grid-contenedor">
+                    <div class="grid">
+                        <img src="./img/Castillos_Borgona/the_castles_of_burgundy_frontal_600.jpg" alt="caja"
+                            class="item">
+                    </div>
+                    <div class="grid">
+                        <img src="./img/Castillos_Borgona/the_castles_of_burgundy_tablero_600.jpg" alt="tablero"
+                            class="item">
+                    </div>
+                    <div class="grid">
+                        <img src="./img/Castillos_Borgona/the_castles_of_burgundy_contenido_600.jpg" alt="contenido"
+                            class="item">
+                    </div>
+                    <div class="grid">
+                        <img src="./img/Castillos_Borgona/the_castles_of_burgundy_jugadores_600.jpg" alt="jugadores"
+                            class="item">
+                    </div>
                 </div>
             </article>
 
             <article class="articleGatos">
-                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/MjrYBljYny4"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe> -->
-                <video src="video/Conociendo La Isla de los Gatos.mp4" poster="img/FT_IslaGatos.jpg" width="680"
-                    height="480" controls></video>
+                <div class="introduccion">
+                    <h2 class="detalle"></h2>
+                    <p class="explicacion detCastillos"></p>
+                    </br>
+                    <p class="explicacion detCastillos2"></p>
+                </div>
             </article>
 
+            <article class="articleGatos">
+                <div class="introduccion">
+                    <h2 class="enlacesComprar"></h2>
+                    <div class="enlaces">
+                        <li>
+                            <a href="https://zacatrus.es/los-castillos-de-borgo-a-edicion-xx-aniversario.html"
+                                class="introduccion enlace" target="_blank">
+                                <img src="img/logos/logo_zacatrus.png" alt="zacatrus" class="zacatrus">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://jugamosuna.es/tienda/8892/comprar-the-castles-of-burgundy-edicion-20-aniversario-barato.html"
+                                class="introduccion enlace" target="_blank"><img src="img/logos/jugamos-una-logo.jpg"
+                                    alt="jugamosUna" class="jugamosUna">
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://quinto-elemento.es/es/juegos-de-mesa/14849-the-castles-of-burgundy-edicion-20-aniversario-4005556269259.html"
+                                class="introduccion enlace" target="_blank"><img
+                                    src="img/logos/quinto-elemento-logo.jpg" alt="quintoElemento"
+                                    class="quintoElemento">
+                            </a>
+                        </li>
+                    </div>
+                </div>
+            </article>
 
-
-
+            <article class="articleGatos">
+                <div class="introduccion">
+                    <h2 class="videoExplicativo"></h2>
+                    <video src="video/Conociendo Los Castillos de Borgoña.mp4"
+                        poster="img/Castillos_Borgona/castillos-borgona-juego-estrategia-oferta.jpg" controls
+                        class="video"></video>
+                </div>
+            </article>
         </section>
     </main>
 </body>

@@ -44,3 +44,17 @@
     @content;
   }
 }
+
+@mixin html {
+  min-height: 100%;
+  position: relative;
+}
+
+@mixin imagenPortada {
+  background: $negro url(../../img/juegos-de-mesa.jpg) repeat center / cover;
+}
+
+@mixin parrafos {
+  margin-top: 20px;
+  font-family: "Inconsolata", monospace;
+}

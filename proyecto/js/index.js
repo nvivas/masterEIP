@@ -13,3 +13,11 @@ function mueveReloj() {
 
   setTimeout("mueveReloj()", 1000);
 }
+
+$(window).scroll(function () {
+  if ($(this).scrollTop() > 100) {
+    $(".arriba").addClass("sticky");
+  } else {
+    $(".arriba").removeClass("sticky");
+  }
+});

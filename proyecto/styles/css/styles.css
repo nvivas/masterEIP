@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Pacifico&family=The+Nautigal:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -16,6 +18,15 @@ body {
   margin: 0;
   margin-bottom: 40px; }
 
+.ingles,
+.espanol {
+  width: 32px;
+  height: 20px;
+  background-color: transparent; }
+
+.header {
+  background: black url(../../img/juegos-de-mesa.jpg) repeat center/cover; }
+
 h1 {
   width: 100%;
   height: 100px;
@@ -23,12 +34,21 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 8px; }
+  margin: 8px;
+  color: white;
+  font-family: "The Nautigal", cursive;
+  font-size: 50px; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 80px; } }
 
 li {
   list-style: none; }
 
-#tituloGatos {
+#tituloGatos,
+#tituloPocimas,
+#tituloCastillos,
+#enlaceReflexion {
   width: 100%;
   padding: 30px;
   font-size: 12px;
@@ -37,11 +57,20 @@ li {
   align-items: center;
   justify-content: center; }
   @media (min-width: 768px) {
-    #tituloGatos {
+    #tituloGatos,
+    #tituloPocimas,
+    #tituloCastillos,
+    #enlaceReflexion {
       font-size: 24px; } }
   @media (min-width: 1024px) {
-    #tituloGatos {
+    #tituloGatos,
+    #tituloPocimas,
+    #tituloCastillos,
+    #enlaceReflexion {
       font-size: 32px; } }
+
+.reflexion {
+  margin-top: 32px; }
 
 .piezasGatos {
   background: black url(../../img/La_Isla_Gatos/viewS/la_isla_de_los_gatos_detalle_piezas.jpg) repeat center/cover;
@@ -55,7 +84,7 @@ li {
   @media (min-width: 1024px) {
     .piezasGatos {
       background: black url(../../img/La_Isla_Gatos/la_isla_de_los_gatos_detalle_piezas.jpg) repeat center/cover;
-      width: 1024px;
+      width: 1200px;
       height: 739px; } }
 
 .piezasPocimas {
@@ -70,7 +99,22 @@ li {
   @media (min-width: 1024px) {
     .piezasPocimas {
       background: black url(../../img/Pocimas_Brebajes/pocimas_brebajes_detalle_caldero.jpg) repeat center/cover;
-      width: 1024px;
+      width: 1200px;
+      height: 739px; } }
+
+.piezasCastillos {
+  background: black url(../../img/Castillos_Borgona/viewS/the_castles_of_burgundy_detalle.jpg) repeat center/cover;
+  width: 304px;
+  height: 197px; }
+  @media (min-width: 768px) {
+    .piezasCastillos {
+      background: black url(../../img/Castillos_Borgona/viewM/the_castles_of_burgundy_detalle.jpg) repeat center/cover;
+      width: 768px;
+      height: 473px; } }
+  @media (min-width: 1024px) {
+    .piezasCastillos {
+      background: black url(../../img/Castillos_Borgona/the_castles_of_burgundy_detalle.jpg) repeat center/cover;
+      width: 1200px;
       height: 739px; } }
 
 .enlaces {
@@ -94,10 +138,10 @@ li {
   flex-direction: column; }
   @media (min-width: 768px) {
     .introduccion {
-      width: 768px; } }
+      width: 758px; } }
   @media (min-width: 1024px) {
     .introduccion {
-      width: 1024px; } }
+      width: 1190px; } }
 
 .zacatrus {
   width: 304px; }
@@ -127,7 +171,10 @@ li {
 .enlace {
   margin-bottom: 16px; }
 
-.tituloIntroduccion {
+.tituloIntroduccion,
+.detalle,
+.enlacesComprar,
+.videoExplicativo {
   margin-bottom: 16px;
   text-decoration: underline; }
 
@@ -147,17 +194,30 @@ li {
       display: flex;
       justify-content: space-around;
       align-items: center;
-      border: 1px white solid;
+      border: 1px solid white;
       background: transparent; }
       .arriba menu li a {
         cursor: pointer;
         text-decoration: none;
         color: red;
-        font-size: 1.05rem; }
+        font-size: 11px; }
         .arriba menu li a:hover {
-          color: white; }
+          color: white; } }
+    @media (min-width: 768px) and (min-width: 1024px) {
+      .arriba menu li a {
+        font-size: 16px; } }
+  @media (min-width: 768px) {
         .arriba menu li a .active {
           color: white; } }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white; }
+  .sticky menu li a:hover {
+    color: black; }
 
 .pocimas a {
   cursor: pointer;
@@ -185,13 +245,16 @@ aside {
 
 .articulo .float .primero {
   color: yellow;
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-family: "Inconsolata", monospace; }
 .articulo .float .segundo {
   color: red;
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-family: "Inconsolata", monospace; }
 .articulo .float .tercero {
   color: purple;
-  margin-top: 20px; }
+  margin-top: 20px;
+  font-family: "Inconsolata", monospace; }
 
 .left {
   float: left;
@@ -250,6 +313,7 @@ footer {
     grid-template-columns: 2fr 2fr;
     gap: 4px;
     justify-content: center;
+    align-items: center;
     width: 1200px; } }
 
 .item {
@@ -268,14 +332,6 @@ footer {
   .navbar {
     display: none; } }
 @media (max-width: 767px) {
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; }
-
-  body {
-    font-family: "Poppins", sans-serif; }
-
   .arriba {
     display: none; }
 
@@ -374,13 +430,129 @@ footer {
   justify-content: center;
   flex-direction: column; }
 
+.otros {
+  margin-right: 20px; }
+
 .tituloFormulario {
   padding: 16px;
-  font-size: 40px; }
+  font-size: 32px; }
+  @media (min-width: 768px) {
+    .tituloFormulario {
+      font-size: 40px; } }
 
 .formulario-contenedor {
+  padding: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 12px; }
+
+.marco_form {
+  width: 75%; }
+
+.radioJuegos {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .radioJuegos .radioJugon {
+    padding: 24px; }
+
+input[type="radio"] {
+  margin: 16px 16px 0; }
+
+.checkbox-container input[type="checkbox"] {
+  margin: 16px 16px 0; }
+
+.checkbox-container {
+  margin: 10px; }
+
+.radioJugon,
+.juegos-check {
+  padding: 4px 20px 12px; }
+
+.radio,
+.radioJugon,
+.juegos-check {
+  width: 100%; }
+
+#nombre,
+#apellidos,
+#jugadores {
+  margin-left: 8px; }
+
+#jugadores {
+  width: 48%;
+  height: 25px; }
+
+.txt_nombre,
+.txt_apellidos {
+  font-size: 14px; }
+
+.nombre,
+.apellidos {
+  width: 300px; }
+  @media (min-width: 768px) {
+    .nombre,
+    .apellidos {
+      width: 600px; } }
+
+.select_jugadores {
+  width: 300px; }
+  @media (min-width: 768px) {
+    .select_jugadores {
+      width: 600px; } }
+
+.labelJugadores {
+  font-size: 12px;
+  margin-right: 10px; }
+  @media (min-width: 768px) {
+    .labelJugadores {
+      font-size: 19px; } }
+
+#nombre,
+#apellidos {
   width: 75%;
-  height: 600px;
-  border: 1px white solid; }
+  height: 25px; }
+
+.txt_nombre {
+  margin-right: 7px; }
+
+.botones {
+  width: 75%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 32px; }
+  .botones button {
+    width: 40%;
+    height: 50px;
+    background: transparent;
+    color: red;
+    border: 1px solid white; }
+
+.formGuardar {
+  width: 300px;
+  height: 50px;
+  background: green;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px; }
+
+.tituloPaginaEnlaces {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 32px; }
+
+.listaPaginaEnlaces {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-top: 32px; }
 
 /*# sourceMappingURL=styles.css.map */

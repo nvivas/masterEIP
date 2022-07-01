@@ -5,58 +5,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juegos de mesa</title>
+    <title>Pocimas y Brebajes</title>
     <meta name="author" content="Ignacio Vivas Martín" />
     <meta name="description" content="Juegos de mesa favoritos">
-    <!-- inicio -->
-    <link rel="stylesheet" href="./styles/css/styles.css">
-    <script src="js/index.js"></script>
+    <link rel="icon" href="iconos/favicon.ico">
+    <!-- link jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- link css -->
+    <link href="./styles/css/styles.css " rel="stylesheet">
+    <!-- link js -->
+    <script src="js/index.js"></script>
+    <script src="js/mensajes.js"></script>
 </head>
 
 <body>
     <header class="header">
-        <h1>Juegos de mesa</h1>
+        <h1 class="juegosTitulo"></h1>
     </header>
-    <nav>
+    <nav class="arriba">
         <menu>
-            <li><a href="index.html" class="active">Inicio</a></li>
-            <li><a href="juegosMesa.html">Juegos de mesa</a></li>
-            <li><a href="rol.html">Rol ESDLA</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+            <li><a href="index.html" class="active inicio"></a></li>
+            <li><a href="juegosMesa.html" class="gatos"></a></li>
+            <li><a href="castillos.html" class="castillos"></a></li>
+            <li><a href="contacto.html" class="contacto"></a></li>
+            <li><a href="enlaces.html" class="enlacesP"></a></li>
+            <li>
+                <button class="ingles"><img src="img/flag.png" alt="bandera Inglés"></button>
+                <button class="espanol"><img src="img/bandera.png" alt="bandera Español"></button>
+            </li>
         </menu>
     </nav>
+    <hr>
     <nav>
-        <menu>
-            <li><a href="juegosMesa.html" class="active">Isla de los gatos</a></li>
-            <li><a href="pocimas.html">Pócimas y brebajes</a></li>
-            <li><a href="castillos.html">Castillos de Borgoña</a></li>
-        </menu>
+        <div class="navbar">
+            <div class="container nav-container">
+                <input class="checkbox" type="checkbox" name="" id="" />
+                <div class="hamburger-lines">
+                    <span class="line line1"></span>
+                    <span class="line line2"></span>
+                    <span class="line line3"></span>
+                </div>
+                <div class="menu-items">
+                    <li><a href="index.html" class="active inicio"></a></li>
+                    <li><a href="juegosMesa.html" class="gatos"></a></li>
+                    <li><a href="castillos.html" class="castillos"></a></li>
+                    <li><a href="contacto.html" class="contacto"></a></li>
+                    <li><a href="enlaces.html" class="enlacesP"></a></li>
+                </div>
+            </div>
+        </div>
     </nav>
     <main class="main_juegos">
         <section class="isla_gatos">
             <article class="articleGatos">
-                <h2 id="tituloGatos">Reseña de Pócimas y Brebajes</h2>
+                <h2 id="tituloPocimas"></h2>
                 <picture class="piezas">
                     <div class="piezasPocimas"></div>
                 </picture>
                 <div class="introduccion">
-                    <h2 class="tituloIntroduccion">INTRODUCCIÓN</h2>
-                    <p class="explicacion">Una vez al año los mejores milagreros y matasanos del territorio se reúnen en
-                        Timburgo para preparar sus brebajes para
-                        el olor de pies, la morriña, el hipo y el mal de amores. Sin embargo, cada curandero tiene su
-                        propio preparado especial.
-                        Cada jugador extrae ingredientes de su propio revoltijo de elementos variados, combinándolos
-                        durante la partida hasta
-                        que considera que su compuesto especial está a punto. Pero hay que tener cuidado ¡cualquier
-                        exceso en la cantidad de
-                        tales ingredientes especiales podría hacer estallar la pócima! Por tanto, saber parar a tiempo,
-                        aunque suponga
-                        conformarse con menores beneficios para empezar, con vistas a mayores rendimientos futuros e
-                        ingredientes más valiosos,
-                        podría ser la clave. Así que reserva tus ingredientes más valiosos hasta que puedas preparar una
-                        pócima tan potente que
-                        deje a esa pandilla de embusteros y cuenta-botones a la altura del betún.</p>
+                    <h2 class="tituloIntroduccion"></h2>
+                    <p class="explicacion expPyB"></p>
                 </div>
             </article>
 
@@ -81,21 +89,15 @@
 
             <article class="articleGatos">
                 <div class="introduccion">
-                    <h2 class="tituloIntroduccion">DETALLE</h2>
-                    <p class="explicacion">En nuestro país se encuentra disponible en español de la mano de Devir.
-                        Permite partidas de 2 a 4 jugadores, con una
-                        edad mínima sugerida de 10 años y una duración aproximada de unos 45 minutos. El precio de venta
-                        al público es de 45€.
-                        Para esta reseña se ha utilizado una copia de la versión en español de Devir, que la propia
-                        editorial nos ha cedido
-                        amablemente.
+                    <h2 class="detalle"></h2>
+                    <p class="explicacion detPyB">
                     </p>
                 </div>
             </article>
 
             <article class="articleGatos">
                 <div class="introduccion">
-                    <h2 class="tituloIntroduccion">Enlaces a páginas para comprar</h2>
+                    <h2 class="enlacesComprar"></h2>
                     <div class="enlaces">
                         <li>
                             <a href="https://zacatrus.es/pocimas-y-brebajes.html" class="introduccion enlace"
@@ -122,7 +124,7 @@
 
             <article class="articleGatos">
                 <div class="introduccion">
-                    <h2 class="tituloIntroduccion">Video explicativo</h2>
+                    <h2 class="videoExplicativo"></h2>
                     <video src="video/Conociendo Pócimas y Brebajes.mp4"
                         poster="img/Pocimas_Brebajes/portadaPocimas-scaled.jpg" controls class="video"></video>
                 </div>
