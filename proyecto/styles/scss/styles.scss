@@ -51,7 +51,8 @@ li {
 #tituloGatos,
 #tituloPocimas,
 #tituloCastillos,
-#enlaceReflexion {
+#enlaceReflexion,
+.pagina404 {
   width: 100%;
   padding: 30px;
   font-size: 12px;
@@ -659,4 +660,25 @@ input[type="radio"] {
   @include display;
   flex-direction: column;
   margin-top: 32px;
+}
+
+.texto {
+  stroke: $blanco;
+  stroke-width: 1px;
+  stroke-dasharray: 300;
+  stroke-dashoffset: 300;
+  fill: transparent;
+  animation: dash 5s 2s infinite forwards;
+  font-family: "Pacifico", cursive;
+}
+
+@keyframes dash {
+  80% {
+    fill: transparent;
+  }
+
+  100% {
+    stroke-dashoffset: 0;
+    fill: $blanco;
+  }
 }

@@ -20,5 +20,7 @@ Disallow:
 User-agent: *
 Disallow: 
 Disallow: /img
-Disallow: /video
 Disallow: /iconos
+Disallow: /json
+
+

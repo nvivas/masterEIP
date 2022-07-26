@@ -68,9 +68,10 @@ $(document).ready(function () {
       $(".tituloFormulario").append(msg.es.tituloFormulario);
       $(".formGuardar").append(msg.es.formGuardar);
       $(".tituloPaginaEnlaces").append(msg.es.tituloPaginaEnlaces);
+      $(".pagina404").append(msg.es.pagina404);
     });
   }
-  $(".espanol").click(function (event) {
+  $(".espanol").click(function () {
     vaciar();
     espanol();
   });
@@ -142,6 +143,7 @@ $(document).ready(function () {
       $(".tituloFormulario").append(msg.en.tituloFormulario);
       $(".formGuardar").append(msg.en.formGuardar);
       $(".tituloPaginaEnlaces").append(msg.en.tituloPaginaEnlaces);
+      $(".pagina404").append(msg.en.pagina404);
     });
   });
   function vaciar() {
@@ -219,6 +221,7 @@ $(document).ready(function () {
       $(".tituloFormulario").html("");
       $(".formGuardar").html("");
       $(".tituloPaginaEnlaces").html("");
+      $(".pagina404").html("");
     });
   }
 });

@@ -62,7 +62,8 @@
     "limpiar": "Limpiar",
     "tituloFormulario": "Cuéntame de ti",
     "formGuardar": "Guardado con exito",
-    "tituloPaginaEnlaces": "Enlaces que he usado para el proyecto"
+    "tituloPaginaEnlaces": "Enlaces que he usado para el proyecto",
+    "pagina404": "Enlace página 404"
   },
 
   "en": {
@@ -128,6 +129,7 @@
     "limpiar": "Clean",
     "tituloFormulario": "Tell me about yourself",
     "formGuardar": "Successfully saved",
-    "tituloPaginaEnlaces": "Links I have used for the project"
+    "tituloPaginaEnlaces": "Links I have used for the project",
+    "pagina404": "Link Page 404"
   }
 }
