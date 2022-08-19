@@ -1,0 +1,14 @@
+<h2 class="tituloFormulario">Formulario de contacto</h2>
+<div [ngStyle]="{
+   'display': 'grid',
+   'grid-template-columns': '1fr 1fr',
+   'width': '270px'
+}">
+  <label for="nombre" class="txt_nombre">Nombre: </label>
+  <input [ngStyle]="{'margin-bottom': '8px', 'border-color': nombre === '' ? 'red' : 'black'}" type="text"
+    [(ngModel)]="nombre" />
+
+  <label for="apellidos" class="txt_apellidos">Apellidos: </label>
+  <input [ngStyle]="{'border-color': apellidos === '' ? 'red' : 'black'}" type="text" [(ngModel)]="apellidos" />
+</div>
+<p *ngIf="nombre !== '' || apellidos !== ''"> Tu nombre es: {{ nombre }} {{ apellidos }}</p>

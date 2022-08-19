@@ -1,0 +1,8 @@
+.contenedor {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 500px;
+    border: 1px solid black;
+    margin: 0 auto;
+}
