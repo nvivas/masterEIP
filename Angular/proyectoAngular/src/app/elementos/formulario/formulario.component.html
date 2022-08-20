@@ -12,3 +12,27 @@
   <input [ngStyle]="{'border-color': apellidos === '' ? 'red' : 'black'}" type="text" [(ngModel)]="apellidos" />
 </div>
 <p *ngIf="nombre !== '' || apellidos !== ''"> Tu nombre es: {{ nombre }} {{ apellidos }}</p>
+
+
+<h3>Formulario de acceso</h3>
+<form method="post" [formGroup]="formAcceso">
+  <div [ngStyle]="{
+    'display': 'flex',
+    'flex-direction': 'column',
+    'width': '270px'
+}">
+    <input [ngStyle]="{'margin-bottom': '8px'}" type=" email" formControlName="email" placeholder="Inserte e.mail"
+      [(ngModel)]="email" />
+    <div *ngIf="validarDatos('email')">
+      {{dimeMensaje('email')}}
+    </div>
+    <input [ngStyle]="{'margin-top': '8px'}" type="password" formControlName="password" placeholder="Inserte pass"
+      [(ngModel)]="password" />
+    <div *ngIf="validarDatos('password')">
+      {{dimeMensaje('password')}}
+    </div>
+  </div>
+</form>
+
+<p *ngIf="mostrarMensaje('email')"> Tu correo es: {{ email }} </p>
+<p *ngIf="mostrarMensaje('password')"> Tu contraseña es: {{ password }}</p>
