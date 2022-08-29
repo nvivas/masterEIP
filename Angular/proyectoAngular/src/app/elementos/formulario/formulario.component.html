@@ -9,9 +9,16 @@
     [(ngModel)]="nombre" />
 
   <label for="apellidos" class="txt_apellidos">Apellidos: </label>
-  <input [ngStyle]="{'border-color': apellidos === '' ? 'red' : 'black'}" type="text" [(ngModel)]="apellidos" />
+  <input [ngStyle]="{'border-color': apellidos === '' ? 'red' : 'black', 'margin-bottom' : '8px' }" type="text"
+    [(ngModel)]="apellidos" />
+
+  <label for="asunto" class="txt_asunto">Asunto: </label>
+  <input [ngStyle]="{'margin-bottom': '8px', 'border-color': asunto === '' ? 'red' : 'black'}" type="text"
+    [(ngModel)]="asunto" />
+
 </div>
-<p *ngIf="nombre !== '' || apellidos !== ''"> Tu nombre es: {{ nombre }} {{ apellidos }}</p>
+<app-formulario-hijo [datosPadre]="nombre" *ngIf="muestraHijo"></app-formulario-hijo>
+<p> El asunto es es: {{ asunto }} </p>
 
 
 <h3>Formulario de acceso</h3>
@@ -31,8 +38,16 @@
     <div *ngIf="validarDatos('password')">
       {{dimeMensaje('password')}}
     </div>
+    <input [ngStyle]="{'margin-top': '8px'}" type="text" formControlName="telefono" placeholder="Inserte el telefono"
+      [(ngModel)]="telefono" />
+
+    <label [ngStyle]="{'margin-top': '8px'}" for="consulta">Motivo de la consulta:</label>
+    <textarea [ngStyle]="{'margin-top': '8px' }" formControlName="consulta" [(ngModel)]="consulta"></textarea>
   </div>
 </form>
 
+
+
 <p *ngIf="mostrarMensaje('email')"> Tu correo es: {{ email }} </p>
 <p *ngIf="mostrarMensaje('password')"> Tu contraseña es: {{ password }}</p>
+<p> Tu teléfono es: {{ telefono }}</p>

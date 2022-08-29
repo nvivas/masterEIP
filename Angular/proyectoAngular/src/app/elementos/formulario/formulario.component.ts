@@ -17,6 +17,11 @@ export class FormularioComponent implements OnInit {
   apellidos: string = '';
   email: string = '';
   password: string = '';
+  telefono: string = '';
+  asunto: string = '';
+  consulta: string = '';
+  muestraHijo: boolean = true;
+
   // creación de variable.
   formAcceso: FormGroup = this.form.group({
     email: [
@@ -35,6 +40,14 @@ export class FormularioComponent implements OnInit {
         Validators.pattern(
           /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[$@$!%*?&])([A-Za-z\d$@$!%*?&]|[^ ]){8,15}$/
         ),
+      ],
+    ],
+
+    telefono: [
+      '',
+      [
+        Validators.minLength(9),
+        Validators.pattern(/\+34\s6[0-9]{1,2}\s[0-9]{7}/),
       ],
     ],
   });
